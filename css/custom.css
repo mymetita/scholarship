@@ -1,0 +1,494 @@
+
+html {
+  font-family: 'Prompt',sans-serif;
+}
+
+body {
+  font-family: 'Prompt',sans-serif;
+}
+
+.tooltip{
+  font-family: 'Prompt',sans-serif;
+}
+
+h1, .h1 {
+  font-size: 2.5rem;
+}
+
+h2, .h2 {
+  font-size: 2rem;
+}
+
+h3, .h3 {
+  font-size: 1.95rem;
+}
+
+h4, .h4 {
+  font-size: 1.4rem;
+}
+
+h5, .h5 {
+  font-size: 1.1rem;
+}
+
+h6, .h6 {
+  font-size: 0.8rem;
+}
+
+/*Navbar color,position degree (cards)
+===============================================================*/
+.navbar-dark .navbar-nav .nav-link2 {
+  color: #524B52;
+}
+.nav-link2 {
+  display: block;
+  padding: 0.5rem 1rem;
+}
+
+/*Navbar position (index)
+===============================================================*/
+.fixed-top-index {
+  position: fixed;
+  top: 6%;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  box-shadow:0px 4px 17px 2px rgba(130,130,130,.5);
+}
+
+.fixed-bottom-index {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+.fixed-top-details {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  box-shadow:0px 4px 17px 2px rgba(130,130,130,.5);
+}
+
+.fixed-bottom-details {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+.logo {
+  vertical-align: middle;
+  border-style: none;
+  height: 6rem;
+  display: block;
+}
+
+.carousel-caption2 {
+  position: absolute;
+  right: 15%;
+  bottom: 20px;
+  left: 15%;
+  top: 35%;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+/* Carousel base class
+===============================================================*/
+.carousel {
+  margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 17rem;
+  background-color: #777;
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 17rem;
+}
+
+.menu {
+  color: #007bff;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+.menu:hover {
+  color: #0056b3;
+  text-decoration: underline #FF8C3F;
+}
+
+.menu:not([href]):not([tabindex]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+.menu:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+.menu:not([href]):not([tabindex]):focus {
+  outline: 0;
+}
+
+/* Register background
+===============================================================*/
+.bgReg{
+	background: linear-gradient(to bottom right,#f5d760,#ff8c3f);
+	opacity:0.7;
+}
+/* Switch (Reg)
+===============================================================*/
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 191px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* Go to top */
+.up{
+  display: block;
+  bottom: 1.875rem;
+  position: fixed;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #ffffff;
+  top:auto;
+  left: auto;
+  right: 1.875rem;
+  cursor: pointer;
+  border-radius: 2.5rem;
+}
+
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ffffff;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 34px;
+  width: 104px;
+  left: 0px;
+  bottom: 0px;
+  background-color: #524B52;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #ffffff;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #ffffff;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(87px);
+}
+
+.form-control2 {
+  top:50%;
+  width: 100%;
+  height: 0px;
+  border:none;
+  border-radius: 0px;
+  border-bottom: 1px solid #ffffff;
+  box-sizing: border-box;
+  background-color: transparent;
+  font-size: 1rem;
+  line-height: 1.5;
+  
+  background-clip: padding-box;
+}
+
+.form-control2::-ms-expand {
+  background-color: transparent;
+  border: 0;
+}
+
+.form-control2:focus {
+  color: #524B52;
+  background-color: transparent;
+  border-bottom: 1px solid #ffffff;
+  outline: none;
+}
+
+.form-control2::-webkit-input-placeholder {
+  color: #524B52;
+  opacity: .5;
+}
+
+.form-control2:-ms-input-placeholder {
+  color: #524B52;
+  opacity: .5;
+}
+
+.form-control2::-ms-input-placeholder {
+  color: #524B52;
+  opacity: .5;
+}
+
+.form-control2::placeholder {
+  color: #524B52;
+  opacity: .5;
+}
+
+.form-control2:disabled, .form-control2[readonly] {
+  background-color: #e9ecef;
+  opacity: 1;
+}
+
+select.form-control2:not([size]):not([multiple]) {
+  height: calc(2.25rem + 2px);
+}
+
+select.form-control2:focus::-ms-value {
+  color: #495057;
+  background-color: #fff;
+}
+
+.form-control2-file,
+.form-control2-range {
+  display: block;
+}
+
+.custom-control2 {
+  position: relative;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  min-height: 1.5rem;
+  padding-left: 1.9rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  /*background:transparent;
+  border-radius: 1rem solid #524B52;*/
+}
+/*Checkbox Reg*/
+.custom-control-indicator {
+  position: absolute;
+  top: 0.25rem;
+  left: 0;
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-color: transparent;
+  border-radius: 0.5rem #524B52;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+.custom-checkbox .custom-control-indicator {
+  border-radius: 0.25rem;
+}
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-indicator {
+  background-color: #524B52;
+}
+
+.custom-checkbox .custom-control-input:indeterminate ~ .custom-control-indicator {
+  background-color: #524B52;
+}
+
+/*Radio*/
+/*.form-check-input {
+  position: absolute;
+  margin-top: 0.25rem;
+  margin-left: -1.25rem;
+}
+.was-validated .form-check-input:valid + .form-check-label, .form-check-input.is-valid + .form-check-label {
+  color: #524B52;
+}
+.was-validated .form-check-input:invalid + .form-check-label, .form-check-input.is-invalid + .form-check-label {
+  color: #524B52;
+}
+.form-inline .form-check-input {
+  position: relative;
+  margin-top: 0;
+  margin-right: 0.25rem;
+  margin-left: 0;
+ }
+.form-check-label {
+  padding-left: 1.25rem;
+  margin-bottom: 0;
+}*/
+
+.skip {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+  font-size: .8rem;
+}
+
+.skip:hover {
+  color: #524B52;
+  font-size: .8rem;
+  text-decoration: none;
+}
+
+.btn-outline-success2 {
+  color: #fff;
+  background-color: #FF8C3F;
+  background-image: none;
+  border-color: #FF8C3F;
+}
+
+/*.btn-outline-success2:hover {
+  color: #fff;
+  background-color: #FF8C3F;
+  border-color: #FF8C3F;
+}*/
+
+.btn-outline-success2:focus, .btn-outline-success.focus {
+  box-shadow: none;
+}
+
+.btn-outline-success2.disabled, .btn-outline-success2:disabled {
+  color: #28a745;
+  background-color: transparent;
+}
+
+.btn-outline-success2:not([disabled]):not(.disabled):active, .btn-outline-success2:not([disabled]):not(.disabled).active,
+.show > .btn-outline-success2.dropdown-toggle {
+  color: #fff;
+  background-color: #FF8C3F;
+  border-color: #FF8C3F;
+  opacity: .7;
+}
+/* Rounded sliders */
+.slider.round {
+  border-radius: 20px;
+}
+
+.slider.round:before {
+  border-radius: 20px;
+}
+
+/* Page section
+===============================================================*/
+.page-section{
+	padding: 0px 0;
+}
+
+/* Card
+===============================================================*/
+.containerCard{
+	width:236px;
+	height: 108px;
+	border-radius: 15px;
+	position: relative;
+	top:0;
+	box-shadow: 4px 4px 4px 4px #bdbdbd;
+	cursor:pointer;
+}
+.colorC1{
+	background: linear-gradient(to bottom right,#f5d760.#ff8c3f);
+}
+
+/* Shadow details
+===============================================================*/
+.jumbotron2 {
+  padding: 1rem 1rem;
+  margin-bottom: 1rem;
+  background-color: #FFFFFF;
+  border-radius: 0.625rem;
+  box-shadow:0px 4px 17px 2px rgba(130,130,130,.5);
+}
+
+.jumbotron2 h5{
+  color: #FF8C3F;
+}
+
+@media (min-width: 576px) {
+  .jumbotron2 {
+    padding: 2rem 2rem;
+  }
+}
+
+.jumbotron-fluid2 {
+  padding-right: 0;
+  padding-left: 0;
+  border-radius: 0;
+}
+
+/* Image details
+===============================================================*/
+.detailsImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 80%;
+  height: 100%;
+}
+
+/* Right Side details
+===============================================================*/
+.list-group-item-action {
+  width: 100%;
+  color: #495057;
+  text-align: inherit;
+}
+
+.list-group-item-action:focus, .list-group-item-action:hover {
+  color: #495057;
+  text-decoration: none;
+  background-color: #f8f9fa;
+}
+
+.list-group-item-action:active {
+  color: #212529;
+  background-color: #e9ecef;
+}
+
+.list-group-item {
+  position: relative;
+  display: block;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: -1px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
