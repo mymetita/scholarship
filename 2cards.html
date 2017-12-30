@@ -21,21 +21,21 @@
 
   <body style="background-color: #F5F5F5;">
     <header>
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #F5F5F5;">
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top-details" style="background-color: #F5F5F5;">
         <a class="navbar-brand" style="color: #524B52;" href="#">KMUTT</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse form-inline mt-2 mt-md-0" id="navbarCollapse" style="padding-left: 70%">
+        <div class="collapse navbar-collapse form-inline mt-2 mt-md-0" id="navbarCollapse" style="padding-left: 60%">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link2" href="#">ปริญญาตรี<span class="sr-only">(current)</span></a>
+              <a class="nav-link2 menu" href="#">ปริญญาตรี<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link2" href="#">ปริญญาโท</a>
+              <a class="nav-link2 menu" href="#">ปริญญาโท</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link2" href="#">ปริญญาเอก</a>
+              <a class="nav-link2 menu" href="#">ปริญญาเอก</a>
             </li>
             
             <div class="dropdown">
@@ -137,6 +137,12 @@
           <section class="row text-center placeholders">
             <div class="col-md-4 col-sm-3 placeholder">
               <img src="data:image/gif;base64,R0lGODlhAQABAIABAAJ12AAAACwAAAAAAQABAAACAkQBADs=" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
+              <div class="card">
+  <!-- <div class="topcard"></div> -->
+  <div class="topcard">
+    <p>Fleece Marigold</p>
+  </div>
+</div>
               <h4>Label</h4>
               <div class="text-muted">Something else</div>
             </div>
@@ -285,13 +291,15 @@
               </tbody>
             </table>
           </div>
+
         </main>
-      </div>
+
+      </div> <!-- row end -->
     </div>
     
     <!-- FOOTER -->
     <footer class="container">
-      <p class="float-right"><a href="#">Back to top</a></p>
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     </footer>
 
     <!-- Bootstrap core JavaScript
@@ -301,5 +309,21 @@
     <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <!-- Go to top -->
+    <script type="text/javascript">
+      window.onscroll = function() {scrollFunction()};
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+              document.getElementById("myBtn").style.display = "block";}
+        else {
+              document.getElementById("myBtn").style.display = "none";}
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+          document.body.scrollTop = 0; // For Safari
+          document.documentElement.scrollTop = 0;} // For Chrome, Firefox, IE and Opera
+    </script>
+
   </body>
 </html>
