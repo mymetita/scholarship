@@ -303,7 +303,7 @@ select.form-control2:focus::-ms-value {
 .form-control2-range {
   display: block;
 }
-
+/*Checkbox Reg*/
 .custom-control2 {
   position: relative;
   display: -ms-inline-flexbox;
@@ -315,7 +315,30 @@ select.form-control2:focus::-ms-value {
   /*background:transparent;
   border-radius: 1rem solid #524B52;*/
 }
-/*Checkbox Reg*/
+.custom-control-input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.custom-control-input:checked ~ .custom-control-indicator {
+  color: #fff;
+  background-color: #007bff;
+}
+.custom-control-input:focus ~ .custom-control-indicator {
+  box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+.custom-control-input:active ~ .custom-control-indicator {
+  color: #fff;
+  background-color: #b3d7ff;
+}
+
+.custom-control-input:disabled ~ .custom-control-indicator {
+  background-color: #e9ecef;
+}
+
+.custom-control-input:disabled ~ .custom-control-description {
+  color: #868e96;
+}
 .custom-control-indicator {
   position: absolute;
   top: 0.25rem;
@@ -328,9 +351,9 @@ select.form-control2:focus::-ms-value {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  background-color: transparent;
-  border-radius: 0.5rem #524B52;
-  background-repeat: no-repeat;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  border: 1rem #524B52;
   background-position: center center;
   background-size: 50% 50%;
 }
