@@ -609,6 +609,7 @@ select.form-control2:focus::-ms-value {
 
 .boxs iframe {
     border-radius: 12px;
+    border-color: transparent;
     width: 100%;
 }
 
