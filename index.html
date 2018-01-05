@@ -32,14 +32,14 @@
 
         <div id="menu" class="collapse navbar-collapse form-inline mt-2 mt-md-0" id="navbarCollapse" style="padding-left: 60%">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link2 menu" href="#Home">หน้าแรก</a>
+            <li class="nav-item">
+              <a class="nav-link2 menu js-scroll-trigger" href="#Home">หน้าแรก</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link2 menu" href="#Search">ค้นหาทุน</a>
+              <a class="nav-link2 menu js-scroll-trigger" href="#Search">ค้นหาทุน</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link2 menu" href="#Contact">ติดต่อ</a>
+              <a class="nav-link2 menu js-scroll-trigger" href="#Contact">ติดต่อ</a>
             </li>
             
             <div class="dropdown">
@@ -120,6 +120,8 @@
             
           </div>
           <div class="col-md-5 bgReg">
+            <div id="lines"></div>
+            <div id="lines2"></div>
             <h4>กรอกข้อมูลส่วนตัว</h4>
 
             <label class="switch">
@@ -151,40 +153,23 @@
                 </label>
               </form>
 
-              <!-- <div class="form-check">
-                <label class="form-check-label">
-                  <input class="form-check-input" type="radio" name="exampleRadios" value="option1" checked>
-                  กำลังศึกษา
-                </label>
-  
-                <label class="form-check-label">
-                  <input class="form-check-input" type="radio" name="exampleRadios" value="option2">
-                  สำเร็จการศึกษา
-                </label>
-              </div> -->
-
-
                 <label for="" class="col-form-label">จาก</label>
                 <input type="" style="padding:.5rem;" class="form-control2" placeholder="From" />
 
-
-
                 <label for="">สนใจเข้าศึกษาในระดับ</label>
                 <select class="form-control2">
-                  <option selected>ปริญญาตรี</option>
-                  <option selected>ปริญญาโท</option>
-                  <option selected>ปริญญาเอก</option>
+                  <option selected>Choose</option>
+                  <option >ปริญญาตรี</option>
+                  <option >ปริญญาโท</option>
+                  <option >ปริญญาเอก</option>
                 </select>
-
-
 
                 <label for="">คณะที่สนใจศึกษาต่อ</label>
                 <select class="form-control2">
-                  <option selected>...</option>
-                  <option selected>...</option>
-                  <option selected>...</option>
+                  <option selected>Choose</option>
+                  <option >...</option>
+                  <option >...</option>
                 </select>
-
 
               <label class="custom-control2 custom-checkbox mb-2 mr-sm-2 mb-sm-0">
                 <input type="checkbox" class="custom-control-input">
@@ -263,10 +248,12 @@
     <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
-    <script src="js/holder.min.js"></script>
+    
+    <!-- Custom JavaScript for this theme -->
+    <script src="js/scrolling-nav.js"></script>
+
     <!-- Single page -->
-    <script type="text/javascript">
+<!--     <script type="text/javascript">
       $(document).ready(function() {          
       $("#menu a").click(function(event){       
       var full_url = this.href;
@@ -276,6 +263,6 @@
       $('html, body').animate({scrollTop:target_top}, 1200);
       return false; });
       });
-    </script>
+    </script> -->
   </body>
 </html>
