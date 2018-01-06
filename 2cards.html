@@ -17,6 +17,8 @@
     <!-- Custom styles for this template -->
     <link href="css/dashboard.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 
   <body class="body-cards">
@@ -126,18 +128,31 @@
             </label>
         </nav>
 
-        <main role="main" class="col-sm-9 ml-sm-auto col-md-10 pt-3">
+        <main role="main" class="col-sm-9 ml-sm-auto col-md-10">
 
-          <section class="row text-center placeholders">
+          <section class="row text-center" style="padding: 0;">
             <div class="col-md-4 col-sm-3 placeholder">
-              <!-- <img src="data:image/gif;base64,R0lGODlhAQABAIABAAJ12AAAACwAAAAAAQABAAACAkQBADs=" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail"> -->
+              <p class="orange">ทุนการศึกษาอื่นๆ</p><p>10 ผลลัพธ์</p>
+            </div>
+            <div class="col-md-4 col-sm-3 placeholder"></div>
+            <div class="col-md-4 col-sm-3 placeholder">
+              <a class="back-detail" style="float: left;" href="#">&lt; กลับสู่หน้าค้นหา</a>
+              <i class="fa fa-th-large bar-list" herf="#"></i>
+              <i class="fa fa-bars bar-list" herf="#"></i>
+            </div>
 
-<div class="card">
-  <!-- <div class="topcard"></div> -->
+            <div class="col-md-4 col-sm-3 placeholder type"><i class="fa fa-angle-down" aria-hidden="true"></i>&nbsp;Hi</div>
+            <div class="col-md-4 col-sm-3 placeholder"></div>
+            <div class="col-md-4 col-sm-3 placeholder"></div>
+
+            <div class="col-md-4 col-sm-3 placeholder">
+              <img src="data:image/gif;base64,R0lGODlhAQABAIABAAJ12AAAACwAAAAAAQABAAACAkQBADs=" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
+
+<!-- <div class="card">
   <div class="topcard">
     <p>Fleece Marigold</p>
   </div>
-</div>
+</div> -->
               <h4>Label</h4>
               <div class="text-muted">Something else</div>
             </div>
@@ -295,7 +310,8 @@
     
     <!-- FOOTER -->
     <footer class="container">
-      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+      <!-- <button onclick="topFunction()" id="return-to-top" title="Go to top"><i class="fa fa-angle-up" style="font-size: 150%;" aria-hidden="true"></i></button> -->
+      <a href="javascript:" id="return-to-top"><i class="fa fa-angle-up" style="font-size: 150%;"></i></a>
     </footer>
 
     <!-- Bootstrap core JavaScript
@@ -321,5 +337,20 @@
           document.documentElement.scrollTop = 0;} // For Chrome, Firefox, IE and Opera
     </script>
 
+    <script type="text/javascript">
+      // ===== Scroll to Top ==== 
+$(window).scroll(function() {
+    if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+        $('#return-to-top').fadeIn(200);    // Fade in the arrow
+    } else {
+        $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+    }
+});
+$('#return-to-top').click(function() {      // When arrow is clicked
+    $('body,html').animate({
+        scrollTop : 0                       // Scroll to top of body
+    }, 500);
+});
+    </script>
   </body>
 </html>
