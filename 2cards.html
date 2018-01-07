@@ -24,16 +24,16 @@
   <body class="body-cards">
     <header>
       <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-gray fixed-top" id="mainNav">
+    <nav class="navbar navbar-expand-md navbar-dark bg-gray fixed-top">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger"  href="#page-top"><img class="logo" style="position: absolute;top:0;" src="images/logo2.png"></a>
+        <a class="navbar-brand" href="#page-top"><img class="logo" style="position: absolute;top:0;" src="images/logo2.png"></a>
         <p class="logo-caption">Scholarship showroom</p>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
+            <li class="nav-item active">
               <a class="nav-link2 menu" href="#">ทั้งหมด</a>
             </li>
             <li class="nav-item">
@@ -129,7 +129,7 @@
         </nav>
 
         <main role="main" class="col-sm-9 ml-sm-auto col-md-10">
-
+          
           <section class="row text-center" style="padding: 0;">
             <div class="col-md-4 col-sm-3 placeholder">
               <p class="orange">ทุนการศึกษาอื่นๆ</p><p>10 ผลลัพธ์</p>
@@ -194,7 +194,7 @@
                   <td>วันนี้ - 31 พ.ค. 2560</td>
                   <td>100,000 บาท</td>
                 </tr>
-                <tr>
+                <tr class="jumbotron2">
                   <td>1,002</td>
                   <td>amet</td>
                   <td>consectetur</td>
@@ -310,8 +310,7 @@
     
     <!-- FOOTER -->
     <footer class="container">
-      <!-- <button onclick="topFunction()" id="return-to-top" title="Go to top"><i class="fa fa-angle-up" style="font-size: 150%;" aria-hidden="true"></i></button> -->
-      <a href="javascript:" id="return-to-top"><i class="fa fa-angle-up" style="font-size: 150%;"></i></a>
+      <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-up" style="font-size: 150%;" aria-hidden="true"></i></button>
     </footer>
 
     <!-- Bootstrap core JavaScript
@@ -335,22 +334,6 @@
       function topFunction() {
           document.body.scrollTop = 0; // For Safari
           document.documentElement.scrollTop = 0;} // For Chrome, Firefox, IE and Opera
-    </script>
-
-    <script type="text/javascript">
-      // ===== Scroll to Top ==== 
-$(window).scroll(function() {
-    if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
-        $('#return-to-top').fadeIn(200);    // Fade in the arrow
-    } else {
-        $('#return-to-top').fadeOut(200);   // Else fade out the arrow
-    }
-});
-$('#return-to-top').click(function() {      // When arrow is clicked
-    $('body,html').animate({
-        scrollTop : 0                       // Scroll to top of body
-    }, 500);
-});
     </script>
   </body>
 </html>
