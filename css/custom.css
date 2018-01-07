@@ -176,6 +176,7 @@ a:hover{
 .bgReg{
 	background: linear-gradient(to bottom right,#f5d760,#ff8c3f);
 	opacity:0.7;
+  padding: 1rem;
 }
 #lines {
   width:25%;
