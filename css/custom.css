@@ -86,7 +86,7 @@ section {
 /*Navbar position (Index)*/
 .bg-gray{
   background-color: #F5F5F5;
-  box-shadow:0px 4px 17px 2px rgba(130,130,130,.5);
+  box-shadow:0px 0px 14px 0px rgba(130, 130, 130, 0.5);
 }
 .fixed-top-index {
   position: fixed;
@@ -596,32 +596,33 @@ select.form-control2:focus::-ms-value {
 }
 /* Card
 ===============================================================*/
-.card{
-  position: relative;
-  margin: 0.625rem 1%;
-  width: 16.5625rem;
-  height: 6.75rem;
-  color: #ffffff;
-  box-shadow:0px 4px 17px 2px rgba(130,130,130,.5);
-  text-align: left;
-  line-height: 1.4em;
-  font-size: 1rem;
-  border-radius: 0.9375rem;
+.cards{
+  
 }
-.card *{
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-.card .topcard{
+.topcard{
   position: relative;bottom: 50%;left: 5%;
-  display: inline-block;
-  width: 14.75rem;
-  height: 6.75rem;
+  display: block;
+  width: 90%;
+  height: 90%;
   z-index: 1;
-  padding: 0.625rem;
   background: linear-gradient(to bottom right,#f5d760,#ff8c3f);
   border-radius: 0.9375rem;
 }
+.card {
+  display:block;
+  width: 90%;
+  height: 6.75rem;
+  color: #ffffff;
+  line-height: 1.4em;
+  font-size: 1rem;
+  border-radius: 0.9375rem;
+  border: none;
+  margin-top:25%;
+  margin-bottom: 15%;
+  }
+  span {
+    display: block;
+  }
 
 /* Shadow details (Cards page)
 ===============================================================*/
@@ -630,7 +631,7 @@ select.form-control2:focus::-ms-value {
   margin-bottom: 1rem;
   background-color: #FFFFFF;
   border-radius: 0.625rem;
-  box-shadow:0px 4px 17px 2px rgba(130,130,130,.5);
+  box-shadow:0px 4px 17px 0px rgba(130,130,130,.5);
 }
 
 .jumbotron2 h5{
