@@ -143,29 +143,33 @@ section {
   padding: 30%;
 }
 
-.menu {
-  color: #4F4F4F;
-  text-decoration: none;
-  background-color: transparent;
-  -webkit-text-decoration-skip: objects;
+a:hover{
+  text-decoration:none;
 }
-.menu:hover {
-  color: #4F4F4F;
-  border-bottom: 0.0625rem solid #FF8C3F;
-  text-decoration: none;
-  
-}
-.menu:not([href]):not([tabindex]) {
-  color: inherit;
-  text-decoration: none;
-}
-.menu:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
-  color: inherit;
-  text-decoration: none;
+.menu-index {
+  text-decoration:none;
+  transition:all 0.2s;
+  -webkit-transition:all 0.2s;
+  -moz-transition:all 0.2s;
 }
 
-.menu:not([href]):not([tabindex]):focus {
-  outline: 0;
+.menu-index:after {
+  content:"";
+  display:block;
+  border-top:2px solid #FF8C3F;
+  width:0;
+  transition:all 0.2s;
+  -webkit-transition:all 0.2s;
+  -moz-transition:all 0.2s;
+}
+
+.menu-index:hover {
+  color:#FF8C3F;
+}
+
+.menu-index:hover:after {
+  width:100%;
+  border-top:2px solid #FF8C3F;
 }
 
 /* Register background (Index: section search*/
@@ -442,21 +446,20 @@ select.form-control2:focus::-ms-value {
 
 .back-detail:hover {
   color: #FF8C3F;
-  font-size: 1rem;
   text-decoration: none;
 }
 .btn-outline-success2 {
   color: #fff;
-  background-color: #FF8C3F;
+  background-color: transparent;
   background-image: none;
-  border-color: #FF8C3F;
+  border-color: #FFF;
 }
 
-/*.btn-outline-success2:hover {
-  color: #fff;
-  background-color: #FF8C3F;
-  border-color: #FF8C3F;
-}*/
+.btn-outline-success2:hover {
+  color: #4F4F4F;
+  background-color: #FFF;
+  border-color: #FFF;
+}
 
 .btn-outline-success2:focus, .btn-outline-success.focus {
   box-shadow: none;
@@ -469,10 +472,10 @@ select.form-control2:focus::-ms-value {
 
 .btn-outline-success2:not([disabled]):not(.disabled):active, .btn-outline-success2:not([disabled]):not(.disabled).active,
 .show > .btn-outline-success2.dropdown-toggle {
-  color: #fff;
-  background-color: #FF8C3F;
-  border-color: #FF8C3F;
-  opacity: .7;
+  color: #4F4F4F;
+  background-color: #FFF;
+  border-color: #FFF;
+  opacity: .8;
 }
 
 /*Social media buttons for contact and footer*/
@@ -647,18 +650,17 @@ select.form-control2:focus::-ms-value {
 /* Lists
 ===============================================================*/
 .table {
-    border-collapse: separate;
-    border-spacing: 10px;
+    border-collapse: collapse;
   }
 
-  /*.table td,
+  .table td,
   .table th {
     background-color: #fff !important;
-  }*/
+  }
 
   .table-bordered th,
   .table-bordered td {
-    border: none;
+  border: none;
   }
 
 table {
@@ -673,8 +675,7 @@ table {
 .table th,
 .table td {
   padding: 0.75rem;
-  vertical-align: top;
-  border-top: 1px solid #e9ecef;
+  vertical-align: top
 }
 
 .table .table {
@@ -682,6 +683,9 @@ table {
 }
 .table-striped tbody tr:nth-of-type(odd) {
   background-color: rgba(0, 0, 0, 0.05);
+}
+.lists{
+  margin: 30px;
 }
 
 /* Image details
@@ -731,7 +735,7 @@ table {
   color: #524B52;
   text-align: center;
   font-size: 1rem;
-  padding: 1.25rem;
+  padding: 1rem;
   width: 100%;
   transition: all 0.5s;
   cursor: pointer;
@@ -761,6 +765,12 @@ table {
 .buttonLists:hover span:after {
   right: 0;
 }
+
+.caption{
+  font-size: 0.8rem;
+  margin-bottom: 0px !important;
+}
+
 .orange{
   color: #FF8C3F;
   display: inline-block;

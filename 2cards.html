@@ -34,16 +34,16 @@
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link2 menu" href="#">ทั้งหมด</a>
+              <a class="nav-link2 menu-index" href="#">ทั้งหมด</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link2 menu" href="#">ปริญญาตรี</a>
+              <a class="nav-link2 menu-index" href="#">ปริญญาตรี</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link2 menu" href="#">ปริญญาโท</a>
+              <a class="nav-link2 menu-index" href="#">ปริญญาโท</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link2 menu" href="#">ปริญญาเอก</a>
+              <a class="nav-link2 menu-index" href="#">ปริญญาเอก</a>
             </li>
             <li class="dropdown">
             <a href="#" class="dropdown-toggle nav-link2" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ภาษาไทย <span class="caret"></span></a>
@@ -141,9 +141,14 @@
               <i class="fa fa-bars bar-list" herf="#"></i>
             </div>
 
-            <div class="col-md-4 col-sm-3 placeholder type"><i class="fa fa-angle-down" aria-hidden="true"></i>&nbsp;Hi</div>
-            <div class="col-md-4 col-sm-3 placeholder"></div>
-            <div class="col-md-4 col-sm-3 placeholder"></div>
+            <div class="col-md-12 placeholder type">
+<a id="aTag" href="javascript:toggleAndChangeText();">
+   <i class="fa fa-angle-down" aria-hidden="true"></i>&nbsp;ทุนกู้ยืม
+</a>
+<div id="divToToggle">
+
+            <!-- <div class="col-md-4 col-sm-3 placeholder"></div>
+            <div class="col-md-4 col-sm-3 placeholder"></div> -->
 
             <div class="col-md-4 col-sm-3 placeholder">
               <img src="data:image/gif;base64,R0lGODlhAQABAIABAAJ12AAAACwAAAAAAQABAAACAkQBADs=" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
@@ -172,6 +177,8 @@
               <h4>Label</h4>
               <span class="t ext-muted">Something else</span>
             </div>
+  </div>
+</div>
           </section>
 
           <h2>Section title</h2>
@@ -194,7 +201,7 @@
                   <td>วันนี้ - 31 พ.ค. 2560</td>
                   <td>100,000 บาท</td>
                 </tr>
-                <tr class="jumbotron2">
+                <tr>
                   <td>1,002</td>
                   <td>amet</td>
                   <td>consectetur</td>
@@ -321,19 +328,6 @@
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <!-- Go to top -->
-    <script type="text/javascript">
-      window.onscroll = function() {scrollFunction()};
-      function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-              document.getElementById("myBtn").style.display = "block";}
-        else {
-              document.getElementById("myBtn").style.display = "none";}
-      }
-
-      // When the user clicks on the button, scroll to the top of the document
-      function topFunction() {
-          document.body.scrollTop = 0; // For Safari
-          document.documentElement.scrollTop = 0;} // For Chrome, Firefox, IE and Opera
-    </script>
+    <script src="js/gototop.js"></script>
   </body>
 </html>
