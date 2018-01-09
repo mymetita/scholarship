@@ -180,6 +180,7 @@ a:hover{
   padding: 1rem;
 }
 #lines {
+  display: inline-block;
   width:25%;
   height:6.93px;
   border-radius: 0.3125rem;
@@ -189,12 +190,54 @@ a:hover{
   float: left;
 }
 #lines2 {
+  display: inline-block;
   width:5%;
   height:6.93px;
   border-radius: 0.3125rem;
   background: #fff;
   margin-top:1.3rem;
   float: left;
+}
+/*For details*/
+#lines3 {
+  display: inline-block;
+  width:15%;
+  height:6.93px;
+  border-radius: 0.3125rem;
+  background: #FF8C3F;
+  margin-bottom:3%;
+  position: relative;
+  float: right;
+}
+#lines4 {
+  display: inline-block;
+  width:3%;
+  height:6.93px;
+  border-radius: 0.3125rem;
+  background: #FF8C3F;
+  margin-bottom:3%;
+  float: right;
+  position: relative;right:2%;
+}
+#lines5 {
+  display: inline-block;
+  width:15%;
+  height:6.93px;
+  border-radius: 0.3125rem;
+  background: #FF8C3F;
+  margin-top:3%;
+  position: relative;
+  float: left;
+}
+#lines6 {
+  display: inline-block;
+  width:3%;
+  height:6.93px;
+  border-radius: 0.3125rem;
+  background: #FF8C3F;
+  margin-top:3%;
+  float: left;
+  position: relative;left:2%;
 }
 /* Switch (Reg)
 ===============================================================*/
@@ -603,7 +646,7 @@ select.form-control2:focus::-ms-value {
 .card {
   display:inline-block;
   width: 100%;
-  height: 6.85rem;
+  height: 6.95rem;
   background-color: #ffffff;
   line-height: 1.4em;
   font-size: 1rem;
@@ -641,7 +684,7 @@ select.form-control2:focus::-ms-value {
   border-radius: 0.9375rem;
 }
 .bg-logo img{
-  padding: 0.7rem 0.7rem 0 0.7rem;
+  padding: 0.7rem 0.7rem 0.1rem 0.7rem;
   position: relative;;
   display: inline-block;
   max-width: 100%;
@@ -663,13 +706,56 @@ select.form-control2:focus::-ms-value {
   float: right;
 }
 .caption-details{
-  position: relative;bottom:90%;
+  position: relative;bottom:80%;
   font-size: 90%;
   color: #4F4F4F;
   padding-left: 5%;
   line-height: 0.8;
 }
 
+/* Filter element (Cards)
+===============================================================*/
+input[type="checkbox"][id="blue"]:checked + label {
+  background:#6666ff;
+}
+input[type="checkbox"][id="blue"]:checked ~ .red, input[type="checkbox"][id="blue"]:checked ~ .green {
+  width:0;
+  height:0;
+  padding:0;
+  margin:0;
+  opacity:0;
+}
+input[type="checkbox"][id="red"]:checked + label {
+  background:#ff4466;
+}
+input[type="checkbox"][id="red"]:checked ~ .blue, input[type="checkbox"][id="red"]:checked ~ .green {
+  width:0;
+  height:0;
+  padding:0;
+  margin:0;
+  opacity:0;
+}
+input[type="checkbox"][id="green"]:checked + label {
+  background:#66dd99;
+}
+input[type="checkbox"][id="green"]:checked ~ .blue, input[type="checkbox"][id="green"]:checked ~ .red {
+  width:0;
+  height:0;
+  padding:0;
+  margin:0;
+  opacity:0;
+}
+.tile {
+  width:23%;
+  height:100px;
+  float:left;
+  transition:all 1s;
+  margin:0.5%;
+  padding:0.5%;
+}
+.blue {
+  background:#6666ff;
+}
 /* Shadow details (Cards page)
 ===============================================================*/
 .jumbotron2 {
@@ -739,11 +825,85 @@ table {
 /* Image details
 ===============================================================*/
 .detailsImg {
-  position: absolute;
-  top: 0;
+  position: absolute  top: 0;
   left: 0;
-  min-width: 80%;
-  height: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 3%;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.img-gradient{
+  position:absolute;  top:5%;
+  display:inline-block;
+  border-radius: 3%;
+  max-width: 50%;
+  height: auto;
+  float: left;
+}
+
+.img-gradient:after {
+  content:'';
+  position:absolute;
+  left:0; top:0;
+  width:100%; height:100%;
+  border-radius: 3%;
+  display:inline-block;
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #fff 115%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fff), color-stop(115%,rgba(0,47,75,0.5))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%,#fff 115%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%,#fff 115%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%,#fff 115%); /* IE10+ */
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%,#fff 115%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002f4b', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+}
+/*.img-gradient p {
+  position: relative;left: 70%;bottom: 50%;
+}*/
+.centered-right {
+    position: relative;
+    text-align: left;
+    left: 70%;
+    transform: translate(20%, -180%);
+    color: #524B52;
+    opacity: 1;
+}
+
+.img-gradient img{
+  display:block;
+  border-radius: 3%;
+  max-width: 100%;
+  height: auto;
+}
+.img-gradient-2{
+  position:absolute;top:5%;
+  display:inline-block;
+  border-radius: 3%;
+  max-width: 50%;
+  height: auto;
+  float: right;
+}
+
+.img-gradient-2:after {
+  content:'';
+  position:absolute;
+  left:0; top:0;
+  width:100%; height:100%;
+  border-radius: 3%;
+  display:inline-block;
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #fff 115%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fff), color-stop(115%,rgba(0,47,75,0.5))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%,#fff 115%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%,#fff 115%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%,#fff 115%); /* IE10+ */
+  background: linear-gradient(to left, rgba(255, 255, 255, 0) 0%,#fff 115%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002f4b', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+}
+.img-gradient-2 img{
+  display:block;
+  border-radius: 3%;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Right Side details
