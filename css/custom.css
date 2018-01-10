@@ -219,7 +219,7 @@ a:hover{
   float: right;
   position: relative;right:2%;
 }
-#lines5 {
+/*#lines5 {
   display: inline-block;
   width:15%;
   height:6.93px;
@@ -238,7 +238,7 @@ a:hover{
   margin-top:3%;
   float: left;
   position: relative;left:2%;
-}
+}*/
 /* Switch (Reg)
 ===============================================================*/
 /* The switch - the box around the slider */
@@ -837,7 +837,7 @@ table {
   position:absolute;  top:5%;
   display:inline-block;
   border-radius: 3%;
-  max-width: 50%;
+  max-width: 100%;
   height: auto;
   float: left;
 }
@@ -857,17 +857,6 @@ table {
   background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%,#fff 115%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002f4b', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
 }
-/*.img-gradient p {
-  position: relative;left: 70%;bottom: 50%;
-}*/
-.centered-right {
-    position: relative;
-    text-align: left;
-    left: 70%;
-    transform: translate(20%, -180%);
-    color: #524B52;
-    opacity: 1;
-}
 
 .img-gradient img{
   display:block;
@@ -879,7 +868,7 @@ table {
   position:absolute;top:5%;
   display:inline-block;
   border-radius: 3%;
-  max-width: 50%;
+  max-width: 100%;
   height: auto;
   float: right;
 }
@@ -891,13 +880,13 @@ table {
   width:100%; height:100%;
   border-radius: 3%;
   display:inline-block;
-  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #fff 115%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fff), color-stop(115%,rgba(0,47,75,0.5))); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%,#fff 115%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%,#fff 115%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%,#fff 115%); /* IE10+ */
-  background: linear-gradient(to left, rgba(255, 255, 255, 0) 0%,#fff 115%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002f4b', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #fff 115%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fff), color-stop(115%,rgba(0,47,75,0.5)));
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%,#fff 115%);
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%,#fff 115%);
+  background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%,#fff 115%);
+  background: linear-gradient(to left, rgba(255, 255, 255, 0) 0%,#fff 115%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002f4b', endColorstr='#00000000',GradientType=0 );
 }
 .img-gradient-2 img{
   display:block;
@@ -991,4 +980,12 @@ table {
 .type{
   padding: 0 5%;
   text-align: left;
+}
+.explain-caption{
+  display: block;
+  float: right;
+  padding: 5% 5% 5% 0 ;
+  position: relative;
+  max-width: 60%;
+  height: 70%;
 }

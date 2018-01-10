@@ -22,3 +22,5 @@ function toggleAndChangeText() {
           $('#aTag').html('<i class="fa fa-angle-up" aria-hidden="true"></i>&nbsp;ทุนกู้ยืม');
      }
 }
+
+//For youtub
