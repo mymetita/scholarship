@@ -1,12 +1,18 @@
 /*
+<<<<<<< HEAD
 
+=======
+>>>>>>> 09f8a50f17100035b631071ab7af9081aa35cb52
 Style   : MobApp Script JS
 Version : 1.0
 Author  : Surjith S M
 URI     : https://surjithctly.in/
 
 Copyright © All rights Reserved 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 09f8a50f17100035b631071ab7af9081aa35cb52
 */
 
 $(function() {
