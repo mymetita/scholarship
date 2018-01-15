@@ -670,6 +670,7 @@ select.form-control2:focus::-ms-value {
   background: linear-gradient(to bottom right,#f5d760,#ff8c3f);
   border-radius: 0.9375rem;
   box-shadow: 0px -1px 17px 0px rgba(130,130,130,.5);
+  padding-top: 1rem;
 }
 .topcard:hover{
   box-shadow: 0px -1px 17px 0px rgba(255, 140, 63, 0.35);
@@ -690,13 +691,19 @@ select.form-control2:focus::-ms-value {
   max-width: 100%;
   height: auto;
 }
-.name-details{
-  position: relative;
+.details-header{
+  /*position: relative;
   font-weight:bold;
   color: #4F4F4F;
   padding:1rem 0.7rem 0 0.7rem;
   float: left;
-  margin-bottom: 0;
+  margin-bottom: 0;*/
+  font-weight: 600;
+  margin-top:0;
+  margin-bottom: .5rem;
+  line-height: 1.2;
+  padding-left:1rem;
+  color: #4F4F4F;
 }
 .name-details-caption{
   position: relative;
@@ -704,6 +711,7 @@ select.form-control2:focus::-ms-value {
   color: #4F4F4F;
   padding:0rem 0.7rem 1.5rem 0.7rem;
   float: right;
+  color: #4F4F4F;
 }
 .caption-details{
   position: relative;bottom:80%;
@@ -712,6 +720,32 @@ select.form-control2:focus::-ms-value {
   padding-left: 5%;
   line-height: 0.8;
 }
+@media(min-width: 576px){
+  .p-responsive{
+    display: block;
+    font-size: 80%;
+  }
+
+
+@media (min-width: 768px) {
+  .p-responsive{
+    display: block;
+    font-size: 80%;
+  }
+}
+
+@media (min-width: 992px) {
+  .p-responsive{
+    display: block;
+    font-size: 90%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .p-responsive{
+    display: block;
+    font-size: 100%;
+  }
 
 /* Filter element (Cards)
 ===============================================================*/
@@ -781,46 +815,30 @@ input[type="checkbox"][id="green"]:checked ~ .blue, input[type="checkbox"][id="g
   padding-left: 0;
   border-radius: 0;
 }
+.jumbotron {
+  padding: 1rem 1rem;
+  margin-bottom: 1rem;
+  background-color: #fff;
+  border-radius: 0.625rem;
+  box-shadow:0px 4px 17px 0px rgba(130,130,130,.5);
+}
+
+@media (min-width: 576px) {
+  .jumbotron {
+    padding: 2rem 2rem;
+  }
+}
+.jumbotron h5{
+  color: #FF8C3F;
+}
+.jumbotron-fluid {
+  padding-right: 0;
+  padding-left: 0;
+  border-radius: 0;
+}
 /* Lists
 ===============================================================*/
-.table {
-    border-collapse: collapse;
-  }
 
-  .table td,
-  .table th {
-    background-color: #fff !important;
-  }
-
-  .table-bordered th,
-  .table-bordered td {
-  border: none;
-  }
-
-table {
-  border-collapse: collapse;
-}
-.table {
-  width: 100%;
-  max-width: 100%;
-  margin-bottom: 1rem;
-  background-color: transparent;
-}
-.table th,
-.table td {
-  padding: 0.75rem;
-  vertical-align: top
-}
-
-.table .table {
-  background-color: #fff;
-}
-.table-striped tbody tr:nth-of-type(odd) {
-  background-color: rgba(0, 0, 0, 0.05);
-}
-.lists{
-  margin: 30px;
-}
 
 /* Image details
 ===============================================================*/
