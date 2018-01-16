@@ -568,12 +568,7 @@ select.form-control2:focus::-ms-value {
 .top-arrow{
   color: #4F4F4F;
 }
-/*.fa-noeffect {
-  font-size: 250%;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
-}*/
+
 .fa-angle-right{
   padding-top: 5%;
   width: 0;
@@ -655,7 +650,7 @@ select.form-control2:focus::-ms-value {
 .card {
   display:inline-block;
   width: 100%;
-  height: 6.95rem;
+  height: 7rem;
   background-color: #ffffff;
   line-height: 1.4em;
   font-size: 1rem;
@@ -663,6 +658,7 @@ select.form-control2:focus::-ms-value {
   border: none;
   margin-top:25%;
   box-shadow: 0px 4px 17px 0px rgba(130,130,130,.5);
+  padding-bottom: .3rem;
   }
   span {
     display: block;
@@ -682,31 +678,23 @@ select.form-control2:focus::-ms-value {
   padding-top: 1rem;
 }
 .topcard:hover{
-  box-shadow: 0px -1px 17px 0px rgba(255, 140, 63, 0.35);
+  box-shadow: none;
 }
 .bg-logo{
   position: relative;bottom:90%;
   display: block;
-  width: 35%;
+  width: 40%;
   height: 50%;
   z-index: 1;
   background-color: #fff;
   border-radius: 0.9375rem;
+  padding: 0.7rem 0.7rem 0.1rem 0.7rem;
 }
 .bg-logo img{
-  padding: 0.7rem 0.7rem 0.1rem 0.7rem;
   position: relative;;
   display: inline-block;
-  max-width: 100%;
-  height: auto;
 }
 .details-header{
-  /*position: relative;
-  font-weight:bold;
-  color: #4F4F4F;
-  padding:1rem 0.7rem 0 0.7rem;
-  float: left;
-  margin-bottom: 0;*/
   font-weight: 600;
   margin-top:0;
   margin-bottom: .5rem;
@@ -1015,4 +1003,9 @@ input[type="checkbox"][id="green"]:checked ~ .blue, input[type="checkbox"][id="g
   position: relative;
   max-width: 60%;
   height: 70%;
+}
+.placeholder img{
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: .1rem;
 }
