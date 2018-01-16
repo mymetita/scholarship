@@ -224,6 +224,7 @@ p.lead {
 
 .bar-list:hover {
     color: #FF8C3F;
+<<<<<<< HEAD
 }
 
 .top-arrow {
@@ -432,6 +433,216 @@ header {
     border-bottom: 0;
 }
 
+=======
+}
+
+.top-arrow {
+    color: #4F4F4F;
+}
+
+.fa-angle-right {
+    padding-top: 5%;
+    width: 0;
+    height: 0;
+}
+
+.fa-facebook {
+    background: rgba(0, 0, 0, 0.51);
+    color: white;
+}
+
+.fa-facebook2 {
+    background: #999D9F;
+    color: #343C3F;
+}
+
+.fa-twitter {
+    background: rgba(0, 0, 0, 0.51);
+    color: white;
+}
+
+.fa-google {
+    background: rgba(0, 0, 0, 0.51);
+    color: white;
+}
+
+.fa-linkedin {
+    background: rgba(0, 0, 0, 0.51);
+    color: white;
+}
+
+.foot {
+    position: absolute;
+    right: 0;
+    left: 0;
+    background-color: #343C3F;
+    text-align: center;
+}
+
+.foot p {
+    margin-top: 1rem;
+    margin-bottom: 0.8rem;
+}
+
+.badge2 {
+    display: inline-block;
+    padding: 0.5em 0.4em;
+    width: 8.6875rem;
+    height: 2.125rem;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.625rem;
+}
+
+.badge-light2 {
+    color: #ffffff;
+    background-color: #FF8C3F;
+}
+
+.feedback {
+    float: left;
+    color: #999D9F;
+}
+
+.phone {
+    text-align: center;
+    color: #999D9F;
+}
+
+
+/* NAVBAR ----------------------*/
+
+.nav-menu {
+    padding: 1rem 0;
+    transition: all 0.3s ease;
+}
+
+.nav-menu.is-scrolling,
+.nav-menu.menu-is-open {
+    background-color: #ff7300;
+    background: -moz-linear-gradient(135deg, #ff7300 0%, #ffb936 100%);
+    background: -webkit-linear-gradient(135deg, #ff7300 0%, #ffb936 100%);
+    background: linear-gradient(135deg, #ff7300 0%, #ffb936 100%);
+    -webkit-box-shadow: 0px 5px 23px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 5px 23px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 5px 23px 0px rgba(0, 0, 0, 0.1);
+}
+
+.nav-menu.is-scrolling {
+    padding: 0;
+}
+
+.navbar-nav .nav-link {
+    position: relative;
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 1rem;
+        padding-left: 1rem;
+        font-size: 14px;
+    }
+    .navbar-nav>.nav-item>.nav-link.active:after {
+        content: "";
+        border-bottom: 2px solid #ffdb8e;
+        left: 1rem;
+        right: 1rem;
+        bottom: 5px;
+        height: 1px;
+        position: absolute;
+    }
+}
+
+@media (max-width:991px) {
+    .navbar-nav.is-scrolling {
+        padding-bottom: 1rem;
+    }
+    .navbar-nav .nav-item {
+        text-align: center;
+    }
+}
+
+
+/* HERO ----------------------*/
+
+header {
+    padding: 100px 0 0;
+    text-align: center;
+    color: #FFF;
+}
+
+.bg-gradient {
+    background-image: -moz-linear-gradient( 135deg, #ff7300 0%, #ffb936 100%);
+    background-image: -webkit-linear-gradient( 135deg, #ff7300 0%, #ffb936 100%);
+    background-image: -ms-linear-gradient( 135deg, #ff7300 0%, #ffb936 100%);
+    background-image: linear-gradient( 135deg, #ff7300 0%, #ffb936 100%);
+}
+
+.tagline {
+    font-size: 23px;
+    font-weight: 300;
+    color: #fff;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.img-holder {
+    height: 0;
+    padding-bottom: 33%;
+    overflow: hidden;
+}
+
+@media (max-width:1200px) {
+    .img-holder {
+        padding-bottom: 50%;
+    }
+}
+
+@media (max-width:767px) {
+    .tagline {
+        font-size: 17px;
+    }
+    .img-holder {
+        padding-bottom: 100%;
+    }
+}
+
+
+/*  TABS
+----------------------*/
+
+.tab-content {
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    /*background-color: #FFF;*/
+    box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.04);
+    padding: 3rem;
+}
+
+@media (max-width:992px) {
+    .tab-content {
+        padding: 1.5rem;
+    }
+}
+
+.tab-content p {
+    line-height: 1.8;
+}
+
+.tab-content h2 {
+    margin-bottom: 0.5rem;
+}
+
+.nav-tabs {
+    border-bottom: 0;
+}
+
+>>>>>>> origin/teay
 .nav-tabs .nav-item .nav-link,
 .nav-tabs .nav-link:focus,
 .nav-tabs .nav-link:hover {
@@ -628,6 +839,60 @@ a:hover {
 }
 
 #lines2 {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+  display: inline-block;
+  width:5%;
+  height:6.93px;
+  border-radius: 0.3125rem;
+  background: #fff;
+  margin-top:1.3rem;
+  float: left;
+}
+/*For details*/
+#lines3 {
+  display: inline-block;
+  width:15%;
+  height:6.93px;
+  border-radius: 0.3125rem;
+  background: #FF8C3F;
+  margin-bottom:3%;
+  position: relative;
+  float: right;
+}
+#lines4 {
+  display: inline-block;
+  width:3%;
+  height:6.93px;
+  border-radius: 0.3125rem;
+  background: #FF8C3F;
+  margin-bottom:3%;
+  float: right;
+  position: relative;right:2%;
+}
+/*#lines5 {
+  display: inline-block;
+  width:15%;
+  height:6.93px;
+  border-radius: 0.3125rem;
+  background: #FF8C3F;
+  margin-top:3%;
+  position: relative;
+  float: left;
+}
+#lines6 {
+  display: inline-block;
+  width:3%;
+  height:6.93px;
+  border-radius: 0.3125rem;
+  background: #FF8C3F;
+  margin-top:3%;
+  float: left;
+  position: relative;left:2%;
+}*/
+=======
+>>>>>>> origin/teay
     width: 5%;
     height: 6.93px;
     border-radius: 0.3125rem;
@@ -637,6 +902,10 @@ a:hover {
 }
 
 
+<<<<<<< HEAD
+=======
+>>>>>>> 58499f73e57d51268bd7421689749b594ce029d5
+>>>>>>> origin/teay
 /* Switch (Reg)
 ===============================================================*/
 
@@ -1228,6 +1497,7 @@ table {
 ===============================================================*/
 
 .detailsImg {
+<<<<<<< HEAD
     position: absolute;
     top: 0;
     left: 0;
@@ -1235,6 +1505,87 @@ table {
     height: 100%;
 }
 
+=======
+<<<<<<< HEAD
+  position: absolute  top: 0;
+  left: 0;
+  max-width: 100%;
+  height: auto;
+  border-radius: 3%;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.img-gradient{
+  position:absolute;  top:5%;
+  display:inline-block;
+  border-radius: 3%;
+  max-width: 100%;
+  height: auto;
+  float: left;
+}
+
+.img-gradient:after {
+  content:'';
+  position:absolute;
+  left:0; top:0;
+  width:100%; height:100%;
+  border-radius: 3%;
+  display:inline-block;
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #fff 115%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fff), color-stop(115%,rgba(0,47,75,0.5))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%,#fff 115%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%,#fff 115%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%,#fff 115%); /* IE10+ */
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%,#fff 115%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002f4b', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+}
+
+.img-gradient img{
+  display:block;
+  border-radius: 3%;
+  max-width: 100%;
+  height: auto;
+}
+.img-gradient-2{
+  position:absolute;top:5%;
+  display:inline-block;
+  border-radius: 3%;
+  max-width: 100%;
+  height: auto;
+  float: right;
+}
+
+.img-gradient-2:after {
+  content:'';
+  position:absolute;
+  left:0; top:0;
+  width:100%; height:100%;
+  border-radius: 3%;
+  display:inline-block;
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #fff 115%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fff), color-stop(115%,rgba(0,47,75,0.5)));
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%,#fff 115%);
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%,#fff 115%);
+  background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%,#fff 115%);
+  background: linear-gradient(to left, rgba(255, 255, 255, 0) 0%,#fff 115%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002f4b', endColorstr='#00000000',GradientType=0 );
+}
+.img-gradient-2 img{
+  display:block;
+  border-radius: 3%;
+  max-width: 100%;
+  height: auto;
+}
+=======
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 80%;
+    height: 100%;
+}
+
+>>>>>>> 58499f73e57d51268bd7421689749b594ce029d5
+>>>>>>> origin/teay
 
 /* Right Side details
 ===============================================================*/
@@ -1326,7 +1677,24 @@ table {
     padding: 0 5%;
     text-align: left;
 }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+.explain-caption{
+  display: block;
+  float: right;
+  padding: 5% 5% 5% 0 ;
+  position: relative;
+  max-width: 60%;
+  height: 70%;
+}
+=======
+>>>>>>> origin/teay
 
 
 /*#f5d760,#ff8c3f*/
 >>>>>>> 09f8a50f17100035b631071ab7af9081aa35cb52
+<<<<<<< HEAD
+=======
+>>>>>>> 58499f73e57d51268bd7421689749b594ce029d5
+>>>>>>> origin/teay
