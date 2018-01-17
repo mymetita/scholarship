@@ -41,19 +41,19 @@ th, td {
 }
 
 .column2 {
-  width: 13%;
-}
-
-.column3 {
-  width: 22%;
-}
-
-.column4 {
   width: 19%;
 }
 
-.column5 {
+.column3 {
   width: 13%;
+}
+
+.column4 {
+  width: 16%;
+}
+
+.column5 {
+  width: 19%;
 }
 
 .table100-head th {
@@ -139,6 +139,9 @@ th, td {
 
 .table100.ver5 tr:hover td {
   cursor: pointer;
+}
+.table100.ver5 tr {
+  min-height:20rem;
 }
 .table100.ver5 tr:hover {
   cursor: pointer;
