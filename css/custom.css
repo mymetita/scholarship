@@ -113,7 +113,6 @@
     .btn-primary:not([disabled]):not(.disabled):active,
     .show>.btn-primary.dropdown-toggle {
         background-image: linear-gradient( 122deg, #eb8511 0%, #ff5420 100%);
-        /*box-shadow: 0px 9px 32px 0px rgba(0, 0, 0, 0.3);*/
         color: #FFF;
     }
     
@@ -296,18 +295,6 @@
         /*padding: 1rem 0;*/
         transition: all 0.3s ease;
     }
-    /*
-    .nav-menu.is-scrolling,
-    .nav-menu.menu-is-open {
-        background-color: #ff7300;
-        background: -moz-linear-gradient(135deg, #ff7300 0%, #ffb936 100%);
-        background: -webkit-linear-gradient(135deg, #ff7300 0%, #ffb936 100%);
-        background: linear-gradient(135deg, #ff7300 0%, #ffb936 100%);
-        -webkit-box-shadow: 0px 5px 23px 0px rgba(0, 0, 0, 0.1);
-        -moz-box-shadow: 0px 5px 23px 0px rgba(0, 0, 0, 0.1);
-        box-shadow: 0px 5px 23px 0px rgba(0, 0, 0, 0.1);
-    }
-    */
     
     .nav-menu.is-scrolling {
         /*padding: .5rem 0;*/
@@ -395,9 +382,7 @@
     .tab-content {
         border-bottom-right-radius: 3px;
         border-bottom-left-radius: 3px;
-        /*background-color: #FFF;*/
-        /*box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.04);*/
-        padding: 2rem;
+        padding: 0;
         min-height: 585px;
     }
     
@@ -419,20 +404,23 @@
         display: inline;
         padding: .5rem 1rem;
     }
-    
+    .nav-link-tab {
+        display: inline;
+        padding: .5rem 1rem;
+    }
+    .nav-link-tab-2 {
+        display: inline;
+    }
     .nav-tabs .nav-item .nav-link,
     .nav-tabs .nav-link:focus,
     .nav-tabs .nav-link:hover {
-        /*padding: 1rem 1rem;*/
-        /*border-color: #faf6fb #faf6fb #FFF;*/
         font-size: 19px;
         color: #383838;
-        /*#b5a4c8*/
         background: #fff;
     }
     
     .nav-tabs .nav-link.right-nav {
-        max-width: 50%;
+        /*max-width: 50%;*/
         float: left;
         border-width: 0px;
         border-radius: 0px 50px 50px 0px;
@@ -452,12 +440,6 @@
     
     .nav-tabs .nav-link.active {
         background: rgb(82, 82, 82);
-        /*background-image: -moz-linear-gradient( 122deg, #ebb111 0%, #ff5420 100%);
-        background-image: -webkit-linear-gradient( 122deg, #ebb111 0%, #ff5420 100%);
-        background-image: -ms-linear-gradient( 122deg, #ebb111 0%, #ff5420 100%);
-        background-image: linear-gradient( 122deg, #ebb111 0%, #ff5420 100%);*/
-        /*border-top-width: 3px;*/
-        /*border-color: #828282 #faf6fbb4 #FFF;*/
         color: #fff;
     }
     /* BG --------*/
@@ -489,17 +471,7 @@
         padding: 1rem;
         z-index: 1;
     }
-    /*
-div .bgRegHalf {
-position: relative;
-right: 0px;
-width: 50%;
-height: 100%;
-background: linear-gradient(to bottom right, #f5d760aa, #ff8c3faa);
-padding: 1rem;
-z-index: 1;
-}
-*/
+
     
     .bgReg {
         background: linear-gradient(to bottom right, #f5d760, #ff8c3f);
@@ -519,13 +491,13 @@ z-index: 1;
         margin: 1rem 0;
         /* Space out the Bootstrap <hr> more */
         width: 100%;
-        height: 4px;
+        height: 2.5px;
         border-radius: 0.3125rem;
         border-top: none;
         background: #CDCDCD;
     }
+
     /*Padding body each page*/
-    
     .body-cards {
         background-color: #F5F5F5;
         padding-top: 10%;
@@ -544,15 +516,7 @@ z-index: 1;
             padding-top: 20%;
         }
     }
-    /*  @media (min-width: 1200px) {
-        .body-cards {
-        padding-top: 10%;
-        }
-    
-        .body-details {
-        padding-top: 12%;
-        }
-    }*/
+
     /*Navbar color,position degree (Cards)*/
     
     .navbar-dark .navbar-nav .nav-link2 {
@@ -711,22 +675,7 @@ z-index: 1;
         float: left;
         margin: 1.5rem .8rem;
     }
-    /*#lines5 {
-        width: 25%;
-        height: 6.93px;
-        border-radius: 0.3125rem;
-        background: #FF8C3F;
-        position: relative;
-        margin: 1.5rem 0;
-    }
-    
-    #lines6 {
-        width: 5%;
-        height: 6.93px;
-        border-radius: 0.3125rem;
-        background: #FF8C3F;
-        margin: 1.5rem .8rem;
-    }*/
+
     /* Switch (Reg)
 ===============================================================*/
     /* The switch - the box around the slider */
@@ -742,30 +691,20 @@ z-index: 1;
     .switch input {
         display: none;
     }
-    /* Go to top */
+    /* Go to top button */
     
     #myBtn {
         display: none;
-        /* Hidden by default */
         position: fixed;
-        /* Fixed/sticky position */
         bottom: 20px;
-        /* Place the button at the bottom of the page */
         right: 30px;
-        /* Place the button 30px from the right */
         z-index: 99;
-        /* Make sure it does not overlap */
         border: none;
-        /* Remove borders */
         box-shadow: 0px 2px 15px 0px rgba(130, 130, 130, .5);
         outline: none;
-        /* Remove outline */
         background-color: #F5F5F5;
-        /* Set a background color */
         cursor: pointer;
-        /* Add a mouse pointer on hover */
         padding: 1.25px;
-        /* Some padding */
         width: 2.8125rem;
         height: 2.8125rem;
         -moz-border-radius: 1.5rem;
@@ -776,8 +715,8 @@ z-index: 1;
     #myBtn:hover {
         box-shadow: 0px 2px 15px 0px rgba(130, 130, 130, .5);
     }
+
     /* The slider for switch (Index: section search*/
-    
     .slider {
         position: absolute;
         cursor: pointer;
@@ -889,8 +828,8 @@ z-index: 1;
     .form-control2-range {
         display: block;
     }
-    /*Checkbox*/
-    
+
+    /*Checkbox*/ 
     .custom-control2 {
         position: relative;
         display: -ms-inline-flexbox;
@@ -1037,7 +976,6 @@ z-index: 1;
     
     .icons {
         padding: 7px;
-        /*font-size: 30px;*/
         width: 30px;
         height: 30px;
         text-align: center;
@@ -1176,7 +1114,7 @@ z-index: 1;
         border-radius: 0.9375rem;
         border: none;
         margin-top: 25%;
-        box-shadow: 0px 4px 17px 0px rgba(130, 130, 130, .5);
+        box-shadow: 0 2px 9px 0 rgba(0,0,0,.1), 0 3px 25px 0 rgba(0,0,0,.1);
         padding-bottom: .3rem;
     }
     
@@ -1193,12 +1131,12 @@ z-index: 1;
         height: 90%;
         z-index: 1;
         border-radius: 0.9375rem;
-        box-shadow: 0px -1px 17px 0px rgba(130, 130, 130, .5);
+        box-shadow: 0 2px 9px 0 rgba(0,0,0,.1), 0 3px 25px 0 rgba(0,0,0,.1);
         padding-top: .5rem;
     }
     
     .card:hover {
-        box-shadow: 0px 4px 17px 0px rgba(255, 140, 63, 0.35);
+         box-shadow: 0 2px 9px 0 rgba(255, 140, 63, 0.1), 0 3px 25px 0 rgba(255, 140, 63, 0.1);
     }
     
     .card:hover .topcard {
@@ -1465,3 +1403,20 @@ z-index: 1;
             margin: auto 0;
             width: 100%;
         }
+option{
+    font-weight: normal;
+    display: block;
+    white-space: pre;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+    background: #f5d760aa;
+}
+option:hover{
+    background: #fff;
+}
+select{
+    color: #4F4F4F;
+}
+input{
+    color: #4F4F4F;
+}
