@@ -1,18 +1,10 @@
 /*
-<<<<<<< HEAD
-
-=======
->>>>>>> 09f8a50f17100035b631071ab7af9081aa35cb52
 Style   : MobApp Script JS
 Version : 1.0
 Author  : Surjith S M
 URI     : https://surjithctly.in/
 
 Copyright © All rights Reserved 
-<<<<<<< HEAD
-
-=======
->>>>>>> 09f8a50f17100035b631071ab7af9081aa35cb52
 */
 
 $(function() {
@@ -114,5 +106,29 @@ $(function() {
             }
         });
     }
+
+    /*
+    HIDDEN
+    */
+    $('#student-next').click(function() {
+        $('#step1').hide();
+        $('#student-step2').fadeToggle("slow");
+    });
+    $('#parent-next').click(function() {
+        $('#step1').hide();
+        $('#parent-step2').fadeToggle("slow");
+    });
+
+    $('#student-back').click(function() {
+        $('#step1').fadeToggle("slow");
+        $('#student-step2').hide();
+        $('#student').addClass("active");
+    });
+
+    $('#parent-back').click(function() {
+        $('#step1').fadeToggle("slow");
+        $('#parent-step2').hide();
+        $('#parent').addClass("active");
+    });
 
 }); /* End Fn */

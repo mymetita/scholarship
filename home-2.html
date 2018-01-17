@@ -35,9 +35,9 @@
     <!-- Nav Menu -->
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-gray fixed-top" id="mainNav">
+    <nav class="nav-menu navbar navbar-expand-lg navbar-dark bg-gray fixed-top" id="mainNav" style="height: 76px;">
         <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top"><img class="logo" style="position: absolute;top:0;" src="images/logo2.png"></a>
+            <a class="navbar-brand js-scroll-trigger" href="#page-top"><img class="logo" style="position: absolute;top:0;" src="images/logo.png"></a>
             <p class="logo-caption">Scholarship showroom</p>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -64,7 +64,6 @@
             </div>
         </div>
     </nav>
-
 
     <!--
     <div class="nav-menu fixed-top">
@@ -98,7 +97,7 @@
     </div>
 -->
 
-    <header class="bg-gradient" id="home">
+    <header id="home" class="bg-gradient" style="background: url('images/kmutt building.png') top center no-repeat; background-size: cover;">
         <div class="container mt-3">
             <div class="container">
                 <h1 style="text-align:left">ให้เราช่วยค้นหาทุนการศึกษา</h1>
@@ -150,20 +149,22 @@
                         <p><br></p>
                         <h3>กรอกข้อมูลส่วนตัว</h3>
                     </div>
-                    <div id="first-step">
-                        <ul class="nav nav-tabs nav-justified" role="tablist">
-                            <li class="nav-item">
-                                <a class="nav-link active" data-toggle="tab" href="#student">นักเรียน</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#parent">ผู้ปกครอง</a>
-                            </li>
-                        </ul>
-                        <div class="tab-content">
-                            <div class="tab-pane fade show active" id="student">
-                                <div class="d-flex flex-column flex-lg-row" style="position: relative; min-height: 521px;">
-                                    <form action="#" class="clearfix" style="/*max-width: 300px;*/">
-                                        <div class="">
+
+                    <form action="#" class="clearfix">
+                        <div id="step1">
+                            <ul class="nav nav-tabs nav-justified" role="tablist">
+                                <li id="" class="nav-item ">
+                                    <a class="nav-link left-nav active" data-toggle="tab" href="#student">นักเรียน</a>
+                                </li>
+                                <li id="" class="nav-item ">
+                                    <a class="nav-link right-nav" data-toggle="tab" href="#parent">ผู้ปกครอง</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="student">
+                                    <div class="d-flex flex-column flex-lg-row" style="position: relative; min-height: 521px;">
+
+                                        <div id="student-step1">
                                             <label for="" class="col-form-label">ชื่อ - นามสกุล</label>
                                             <input type="" style="padding:.5rem;" class="form-control2" placeholder="name" />
 
@@ -210,151 +211,139 @@
 
                                             <div class="" style="position: absolute; bottom: 0px; right: 0px; text-align: right; padding-top:20px">
                                                 <a class="skip" href="#">ข้ามขั้นตอนนี้ไป</a>
-                                                <button class="btn btn-outline-success2 my-2 my-sm-0" type="submit">ต่อไป </button>
+                                                <button id="student-next" class="btn btn-outline-success2 my-2 my-sm-0" type="submit">ต่อไป</button>
                                             </div>
                                         </div>
-                                    </form>
+
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="parent" style="position: relative; min-height: 521px;">
+                                    <div class="d-flex flex-column flex-lg-row">
+
+                                        <div id="parent-step1">
+                                            <label for="">สนใจเข้าศึกษาในระดับ</label>
+                                            <select class="form-control2">
+                                                <option selected>Choose</option>
+                                                <option >ปริญญาตรี</option>
+                                                <option >ปริญญาโท</option>
+                                                <option >ปริญญาเอก</option>
+                                            </select>
+
+                                            <label for="">คณะที่สนใจศึกษาต่อ</label>
+                                            <select class="form-control2">
+                                                <option selected>Choose</option>
+                                                <option >...</option>
+                                                <option >...</option>
+                                            </select>
+
+                                            <label class="custom-control2 custom-checkbox mb-2 mr-sm-2 mb-sm-0">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <span class="custom-control-indicator-2"></span>
+                                                <span class="custom-control-description">สนใจรับจดหมายข่าว</span>
+                                            </label>
+
+                                            <label for="" class="col-form-label">E-mail</label>
+                                            <input type="" style="padding:.5rem;" class="form-control2" placeholder="E-mail" />
+
+                                            <label for="" class="col-form-label">เบอร์โทรศัพท์</label>
+                                            <input type="" style="padding:.5rem;" class="form-control2" placeholder="Phone" />
+                                            <div class="" style="position: absolute; bottom: 0px; right: 0px; text-align: right; padding-top:20px">
+                                                <a class="skip" href="#">ข้ามขั้นตอนนี้ไป</a>
+                                                <button id="parent-next" class="btn btn-outline-success2 my-2 my-sm-0" type="submit">ต่อไป </button>
+                                            </div>
+                                        </div>
+
+                                    </div>
                                 </div>
                             </div>
-                            <div class="tab-pane fade" id="parent" style="position: relative; min-height: 521px;">
-                                <div class="d-flex flex-column flex-lg-row">
-                                    <div>
-                                        <label for="">สนใจเข้าศึกษาในระดับ</label>
-                                        <select class="form-control2">
-                                            <option selected>Choose</option>
-                                            <option >ปริญญาตรี</option>
-                                            <option >ปริญญาโท</option>
-                                            <option >ปริญญาเอก</option>
-                                        </select>
+                        </div>
 
-                                        <label for="">คณะที่สนใจศึกษาต่อ</label>
-                                        <select class="form-control2">
-                                            <option selected>Choose</option>
-                                            <option >...</option>
-                                            <option >...</option>
-                                        </select>
-
+                        <div id="student-step2" class="next-step" style="position: relative; min-height: 628px; display:none; padding:2rem 5rem 5rem 5rem;">
+                            <div class="d-flex flex-column flex-lg-row">
+                                <div class="container">
+                                    <div class="row">
+                                        <label class="custom-control2 custom-checkbox mb-2 mr-sm-2 mb-sm-0">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <span class="custom-control-indicator-2"></span>
+                                                <span class="custom-control-description">เป็นนักศึกษาต่างชาติ</span>
+                                            </label>
+                                    </div>
+                                    <div class="row">
                                         <label class="custom-control2 custom-checkbox mb-2 mr-sm-2 mb-sm-0">
                                             <input type="checkbox" class="custom-control-input">
                                             <span class="custom-control-indicator-2"></span>
-                                            <span class="custom-control-description">สนใจรับจดหมายข่าว</span>
+                                            <span class="custom-control-description">รายได้ครอบครัว น้อยกว่า 200,000 บาทต่อปี</span>
                                         </label>
+                                    </div>
+                                    <div class="row">
+                                        <label class="custom-control2 custom-checkbox mb-2 mr-sm-2 mb-sm-0">
+                                            <input type="checkbox" class="custom-control-input">
+                                            <span class="custom-control-indicator-2"></span>
+                                            <span class="custom-control-description">เคยได้รับรางวัลในระดับเขต/ประเทศ/นานาชาติ</span>
+                                        </label>
+                                    </div>
+                                    <div class="row">
+                                        <label class="custom-control2 custom-checkbox mb-2 mr-sm-2 mb-sm-0">
+                                            <input type="checkbox" class="custom-control-input">
+                                            <span class="custom-control-indicator-2"></span>
+                                            <span class="custom-control-description">ต้องการทุนสนับสนุนงานวิจัย</span>
+                                        </label>
+                                    </div>
 
-                                        <label for="" class="col-form-label">E-mail</label>
-                                        <input type="" style="padding:.5rem;" class="form-control2" placeholder="E-mail" />
-
-                                        <label for="" class="col-form-label">เบอร์โทรศัพท์</label>
-                                        <input type="" style="padding:.5rem;" class="form-control2" placeholder="Phone" />
-                                        <div class="" style="position: absolute; bottom: 0px; right: 0px; text-align: right; padding-top:20px">
-                                            <a class="skip" href="#">ข้ามขั้นตอนนี้ไป</a>
-                                            <button class="btn btn-outline-success2 my-2 my-sm-0" type="submit">ต่อไป </button>
-                                        </div>
+                                    <div style="position: absolute; bottom: 2rem; right: 2rem; padding-top:20px;">
+                                        <!--<span class="ti-angle-left"></span>-->
+                                        <a id="student-back"> ย้อนกลับ</a>
+                                        <button class="btn btn-primary my-2 my-sm-0" type="submit">ส่งคำตอบ </button>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
-                    </div>
-                    <div id="secound-step">
 
-                    </div>
+                        <div id="parent-step2" class="next-step" style="position: relative; min-height: 628px; display:none; padding:2rem 5rem 5rem 5rem;">
+                            <div class="d-flex flex-column flex-lg-row">
+                                <div class="container">
+                                    <div class="row">
+                                        <label class="custom-control2 custom-checkbox mb-2 mr-sm-2 mb-sm-0">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-control-indicator-2"></span>
+                                                    <span class="custom-control-description">เป็นนักศึกษาต่างชาติ</span>
+                                                </label>
+                                    </div>
+                                    <div class="row">
+                                        <label class="custom-control2 custom-checkbox mb-2 mr-sm-2 mb-sm-0">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <span class="custom-control-indicator-2"></span>
+                                                <span class="custom-control-description">รายได้ครอบครัว น้อยกว่า 200,000 บาทต่อปี</span>
+                                            </label>
+                                    </div>
+                                    <div class="row">
+                                        <label class="custom-control2 custom-checkbox mb-2 mr-sm-2 mb-sm-0">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <span class="custom-control-indicator-2"></span>
+                                                <span class="custom-control-description">เคยได้รับรางวัลในระดับเขต/ประเทศ/นานาชาติ</span>
+                                            </label>
+                                    </div>
+                                    <div class="row">
+                                        <label class="custom-control2 custom-checkbox mb-2 mr-sm-2 mb-sm-0">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <span class="custom-control-indicator-2"></span>
+                                                <span class="custom-control-description">ต้องการทุนสนับสนุนงานวิจัย</span>
+                                            </label>
+                                    </div>
+
+                                    <div style="position: absolute; bottom: 2rem; right: 2rem; padding-top:20px;">
+                                        <!--<span class="ti-angle-left"></span>-->
+                                        <a id="parent-back"> ย้อนกลับ</a>
+                                        <button class="btn btn-primary my-2 my-sm-0" type="submit">ส่งคำตอบ </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
-    <!-- // end .section -->
-
-    <!-- Section Search
-=================================================================== 
-    <section id="services" style="padding:2% 0; background: url('images/kmutt building.png') bottom center no-repeat; background-size: cover;">
-        <div class="container">
-            <div class="row featurette">
-                <div class="col-md-7"></div>
-                <div class="col-md-5 bgReg">
-                    <div id="lines"></div>
-                    <div id="lines2"></div>
-                    <h4>กรอกข้อมูลส่วนตัว</h4>
-
-                    <label class="switch">
-                    <input type="checkbox">
-                    <span class="slider round">นักเรียน</span>
-                    <span>ผู้ปกครอง</span>
-                </label>
-
-                <form action="#" class="clearfix" style="max-width: 300px;">
-                    <div class="col_full">
-                        <label for="" class="col-form-label">ชื่อ - นามสกุล</label>
-                        <input type="" style="padding:.5rem;" class="form-control2" placeholder="name" />
-
-                        <label for="" class="col-form-label">เกรดเฉลี่ย</label>
-                        <input type="" style="padding:.5rem;" class="form-control2" placeholder="Grade" />
-
-                        <form class="was-validated">
-                            <label class="custom-control2 custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" required>
-                                <span class="custom-control-indicator-2"></span>
-                                <span class="custom-control-description">กำลังศึกษา</span>
-                            </label>
-                            <label class="custom-control2 custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" required>
-                                <span class="custom-control-indicator-2"></span>
-                                <span class="custom-control-description">สำเร็จการศึกษา</span>
-                            </label>
-                            </form>
-
-                            <label for="" class="col-form-label">จาก</label>
-                            <input type="" style="padding:.5rem;" class="form-control2" placeholder="From" />
-
-                            <label for="">สนใจเข้าศึกษาในระดับ</label>
-                            <select class="form-control2">
-                <option selected>Choose</option>
-                <option >ปริญญาตรี</option>
-                <option >ปริญญาโท</option>
-                <option >ปริญญาเอก</option>
-              </select>
-
-                            <label for="">คณะที่สนใจศึกษาต่อ</label>
-                            <select class="form-control2">
-                <option selected>Choose</option>
-                <option >...</option>
-                <option >...</option>
-              </select>
-
-                            <label class="custom-control2 custom-checkbox mb-2 mr-sm-2 mb-sm-0">
-              <input type="checkbox" class="custom-control-input">
-              <span class="custom-control-indicator-2"></span>
-              <span class="custom-control-description">สนใจรับจดหมายข่าว</span>
-            </label>
-
-                            <label for="" class="col-form-label">E-mail</label>
-                            <input type="" style="padding:.5rem;" class="form-control2" placeholder="E-mail" />
-
-                            <label for="" class="col-form-label">เบอร์โทรศัพท์</label>
-                            <input type="" style="padding:.5rem;" class="form-control2" placeholder="Phone" />
-
-                        </div>
-                    </form>
-                    <div class="col_full nobottommargin" style="text-align: right;">
-                        <a class="skip" href="#">ข้ามขั้นตอนนี้ไป</a>
-                        <button class="btn btn-outline-success2 my-2 my-sm-0" type="submit">ต่อไป </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
--->
-    <!--
-        <div class="section bg-gradient">
-            <div class="container">
-                <div class="call-to-action">
-                    <h2>Start Now</h2>
-                    <p class="tagline">Available for all major mobile and desktop platforms. Rapidiously visualize optimal ROI rather than enterprise-wide methods of empowerment. </p>
-                    <div class="my-4">
-                    </div>
-                </div>
-            </div>
-        </div>
-        -->
     <!-- // end .section -->
 
     <div class="light-bg py-5" id="contact">
@@ -370,7 +359,7 @@
                     <p></p>
                     <p class="mb-2">
                         <span class="ti-location-pin mr-2"></span>
-                        <b style="/*color:#4F4F4F*/">มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี</b>
+                        <b>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี</b>
                         <br> 126 ถนนประชาอุทิศ แขวงบางมด เขตทุ่งครุ กรุงเทพฯ 10140795
                     </p>
                     <div class=" d-block d-sm-inline-block">
