@@ -1,10 +1,10 @@
-    html {
+        html {
         font-family: 'Prompt', sans-serif;
     }
     
     body {
         font-family: 'Prompt', sans-serif;
-        position: relative;
+        /*position: relative;*/
         color: #4F4F4F;
     }
     
@@ -40,7 +40,7 @@
     
     h3,
     .h3 {
-        color: #633991;
+        color: #4F4F4F;
         font-size: 1.95rem;
         font-weight: 500;
     }
@@ -66,7 +66,7 @@
     }
     
     p {
-        color: #959094;
+        color: #4F4F4F;
     }
     
     p.lead {
@@ -407,16 +407,17 @@
         }
     }
     
-    .tab-content p {
-        line-height: 1.8;
-    }
-    
     .tab-content h2 {
         margin-bottom: 0.5rem;
     }
     
     .nav-tabs {
         border-bottom: 0;
+    }
+    
+    .nav-link {
+        display: inline;
+        padding: .5rem 1rem;
     }
     
     .nav-tabs .nav-item .nav-link,
@@ -442,6 +443,11 @@
         float: right;
         border-width: 0px;
         border-radius: 50px 0px 0px 50px;
+    }
+    
+    .nav-tabs .nav-link {
+        border: none;
+        border-radius:
     }
     
     .nav-tabs .nav-link.active {
@@ -513,21 +519,40 @@ z-index: 1;
         margin: 1rem 0;
         /* Space out the Bootstrap <hr> more */
         width: 100%;
-        height: 2px;
+        height: 4px;
         border-radius: 0.3125rem;
-        background: #fff;
+        border-top: none;
+        background: #CDCDCD;
     }
     /*Padding body each page*/
     
     .body-cards {
-        padding-top: 10%;
         background-color: #F5F5F5;
+        padding-top: 10%;
     }
     
     .body-details {
-        padding-top: 10%;
         background-color: #F5F5F5;
+        padding-top: 10%;
     }
+    
+    @media (max-width: 375px) {
+        .body-cards {
+            padding-top: 10%;
+        }
+        .body-details {
+            padding-top: 20%;
+        }
+    }
+    /*  @media (min-width: 1200px) {
+        .body-cards {
+        padding-top: 10%;
+        }
+    
+        .body-details {
+        padding-top: 12%;
+        }
+    }*/
     /*Navbar color,position degree (Cards)*/
     
     .navbar-dark .navbar-nav .nav-link2 {
@@ -667,6 +692,41 @@ z-index: 1;
         margin-top: 1.3rem;
         float: left;
     }
+    
+    #lines3 {
+        width: 25%;
+        height: 6.93px;
+        border-radius: 0.3125rem;
+        background: #FF8C3F;
+        position: relative;
+        float: left;
+        margin: 1.5rem 0;
+    }
+    
+    #lines4 {
+        width: 5%;
+        height: 6.93px;
+        border-radius: 0.3125rem;
+        background: #FF8C3F;
+        float: left;
+        margin: 1.5rem .8rem;
+    }
+    /*#lines5 {
+        width: 25%;
+        height: 6.93px;
+        border-radius: 0.3125rem;
+        background: #FF8C3F;
+        position: relative;
+        margin: 1.5rem 0;
+    }
+    
+    #lines6 {
+        width: 5%;
+        height: 6.93px;
+        border-radius: 0.3125rem;
+        background: #FF8C3F;
+        margin: 1.5rem .8rem;
+    }*/
     /* Switch (Reg)
 ===============================================================*/
     /* The switch - the box around the slider */
@@ -1109,7 +1169,7 @@ z-index: 1;
     .card {
         display: inline-block;
         width: 100%;
-        height: 7rem;
+        height: 8rem;
         background-color: #ffffff;
         line-height: 1.4em;
         font-size: 1rem;
@@ -1124,10 +1184,6 @@ z-index: 1;
         display: block;
     }
     
-    .card:hover {
-        box-shadow: 0px 4px 17px 0px rgba(255, 140, 63, 0.35);
-    }
-    
     .topcard {
         position: relative;
         bottom: 60%;
@@ -1136,26 +1192,29 @@ z-index: 1;
         width: 90%;
         height: 90%;
         z-index: 1;
-        background: linear-gradient(to bottom right, #f5d760, #ff8c3f);
         border-radius: 0.9375rem;
         box-shadow: 0px -1px 17px 0px rgba(130, 130, 130, .5);
-        padding-top: 1rem;
+        padding-top: .5rem;
     }
     
-    .topcard:hover {
+    .card:hover {
+        box-shadow: 0px 4px 17px 0px rgba(255, 140, 63, 0.35);
+    }
+    
+    .card:hover .topcard {
         box-shadow: none;
     }
     
     .bg-logo {
         position: relative;
-        bottom: 90%;
+        bottom: 100%;
         display: block;
         width: 40%;
-        height: 50%;
+        height: 60%;
         z-index: 1;
         background-color: #fff;
         border-radius: 0.9375rem;
-        padding: 0.7rem 0.7rem 0.1rem 0.7rem;
+        padding: 0.3rem 0.7rem 0.1rem 0.7rem;
     }
     
     .bg-logo img {
@@ -1167,7 +1226,7 @@ z-index: 1;
     .details-header {
         font-weight: 600;
         margin-top: 0;
-        margin-bottom: .5rem;
+        margin-bottom: .1rem;
         line-height: 1.2;
         padding-left: 1rem;
         color: #4F4F4F;
@@ -1184,27 +1243,30 @@ z-index: 1;
     
     .caption-details {
         position: relative;
-        bottom: 80%;
-        font-size: 90%;
+        bottom: 95%;
         color: #4F4F4F;
         padding-left: 5%;
         line-height: 0.8;
+        z-index: 1;
     }
     
     @media(min-width: 576px) {
         .p-responsive {
             display: block;
-            font-size: 80%;
+            font-size: 100%;
+        }
+        .d-responsive {
+            display: block;
+            font-size: 87%
         }
         .topcard {
             position: relative;
-            bottom: 50%;
+            bottom: 55%;
             left: 5%;
             display: block;
             width: 90%;
-            height: 90%;
+            height: 100%;
             z-index: 1;
-            background: linear-gradient(to bottom right, #f5d760, #ff8c3f);
             border-radius: 0.9375rem;
         }
         .card {
@@ -1222,23 +1284,26 @@ z-index: 1;
         span {
             display: block;
         }
-        /* Shadow details (Cards page) ===============================================================*/
-        .jumbotron2 {
-            padding: 1rem 1rem;
+    }
+    
+    #orange-gradient {
+        background: linear-gradient(to bottom right, #f5d760, #ff8c3f);
+    }
+    /* Shadow details (Cards page)
+===============================================================*/
+    
+    @media(min-width:300px) {
+        .jumbotron {
+            padding: 2rem 2rem;
             margin-bottom: 1rem;
             background-color: #FFFFFF;
             border-radius: 0.625rem;
             box-shadow: 0px 4px 17px 0px rgba(130, 130, 130, .5);
         }
-        .jumbotron2 h5 {
+        .jumbotron h5 {
             color: #FF8C3F;
         }
-        @media (min-width: 576px) {
-            .jumbotron2 {
-                padding: 2rem 2rem;
-            }
-        }
-        .jumbotron-fluid2 {
+        .jumbotron-fluid {
             padding-right: 0;
             padding-left: 0;
             border-radius: 0;
@@ -1374,4 +1439,29 @@ z-index: 1;
             padding-bottom: 0;
             margin-bottom: .1rem;
         }
-    }
+        /*============ NEW =============*/
+        .img-radius {
+            border-radius: 1.25rem;
+            margin-bottom: 1rem;
+            margin-top: 1rem;
+        }
+        .linear-img-right {
+            -webkit-mask-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0)));
+        }
+        .linear-img-left {
+            -webkit-mask-image: -webkit-gradient(linear, right top, left bottom, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0)));
+        }
+        .img-p {
+            margin-bottom: 1rem;
+            margin-top: 1rem;
+        }
+        .set-text {
+            display: flex;
+        }
+        .text-middle-left {
+            margin: auto 0;
+        }
+        .text-middle-right {
+            margin: auto 0;
+            width: 100%;
+        }
