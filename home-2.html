@@ -45,10 +45,10 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link2 menu-index js-scroll-trigger" alt="หน้าแรก" href="#about">หน้าแรก</a>
+                        <a class="nav-link2 menu-index js-scroll-trigger" alt="หน้าแรก" href="#home">หน้าแรก</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link2 menu-index js-scroll-trigger" href="#services">ค้นหาทุน</a>
+                        <a class="nav-link2 menu-index js-scroll-trigger" href="#find_scholars">ค้นหาทุน</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link2 menu-index js-scroll-trigger" href="#contact">ติดต่อ</a>
@@ -136,131 +136,130 @@
     </div>
     <!-- // end .section -->
 
-    <div class="section light-bg" style="padding:0px; background: url('images/kmutt building.png') bottom center no-repeat; background-size: cover;">
+    <div class="section light-bg" id="find_scholars" style="padding:0px; background: url('images/kmutt building.png') bottom center no-repeat; background-size: cover;">
+        <!--<div class="bgRegHalf">-->
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
                 </div>
-                <div class="col-md-6 bgReg">
+                <div class="col-md-6 bgRegHalf">
                     <div class="section-title mt-2">
                         <small></small>
                         <div id="lines"></div>
                         <div id="lines2"></div>
                         <p><br></p>
-                        <h3>กรอกข้อมูลของท่าน</h3>
+                        <h3>กรอกข้อมูลส่วนตัว</h3>
                     </div>
-                    <ul class="nav nav-tabs nav-justified" role="tablist">
-                        <li class="nav-item">
-                            <a class="nav-link active" data-toggle="tab" href="#student">นักเรียน</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#parent">ผู้ปกครอง</a>
-                        </li>
-                    </ul>
-                    <div class="tab-content">
-                        <div class="tab-pane fade show active" id="student">
-                            <div class="d-flex flex-column flex-lg-row">
-                                <form action="#" class="clearfix" style="/*max-width: 300px;*/">
-                                    <div class="">
-                                        <label for="" class="col-form-label">ชื่อ - นามสกุล</label>
-                                        <input type="" style="padding:.5rem;" class="form-control2" placeholder="name" />
+                    <div id="first-step">
+                        <ul class="nav nav-tabs nav-justified" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="tab" href="#student">นักเรียน</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#parent">ผู้ปกครอง</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="student">
+                                <div class="d-flex flex-column flex-lg-row" style="position: relative; min-height: 521px;">
+                                    <form action="#" class="clearfix" style="/*max-width: 300px;*/">
+                                        <div class="">
+                                            <label for="" class="col-form-label">ชื่อ - นามสกุล</label>
+                                            <input type="" style="padding:.5rem;" class="form-control2" placeholder="name" />
 
-                                        <label for="" class="col-form-label">เกรดเฉลี่ย</label>
-                                        <input type="" style="padding:.5rem;" class="form-control2" placeholder="Grade" />
+                                            <label for="" class="col-form-label">เกรดเฉลี่ย</label>
+                                            <input type="" style="padding:.5rem;" class="form-control2" placeholder="Grade" />
 
-                                        <form class="was-validated">
-                                            <label class="custom-control2 custom-checkbox">
-                                                  <input type="checkbox" class="custom-control-input" required>
-                                                  <span class="custom-control-indicator-2"></span>
-                                                  <span class="custom-control-description">กำลังศึกษา</span>
+                                            <form class="was-validated">
+                                                <label class="custom-control2 custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" required>
+                                                    <span class="custom-control-indicator-2"></span>
+                                                    <span class="custom-control-description">กำลังศึกษา</span>
                                                 </label>
-                                            <label class="custom-control2 custom-checkbox">
-                                                  <input type="checkbox" class="custom-control-input" required>
-                                                  <span class="custom-control-indicator-2"></span>
-                                                  <span class="custom-control-description">สำเร็จการศึกษา</span>
+                                                <label class="custom-control2 custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" required>
+                                                    <span class="custom-control-indicator-2"></span>
+                                                    <span class="custom-control-description">สำเร็จการศึกษา</span>
                                                 </label>
-                                        </form>
-
-                                        <label for="" class="col-form-label">จาก</label>
-                                        <input type="" style="padding:.5rem;" class="form-control2" placeholder="From" />
-
-                                        <label for="">สนใจเข้าศึกษาในระดับ</label>
-                                        <select class="form-control2">
+                                            </form>
+                                            <label for="" class="col-form-label">จาก</label>
+                                            <input type="" style="padding:.5rem;" class="form-control2" placeholder="From" />
+                                            <label for="">สนใจเข้าศึกษาในระดับ</label>
+                                            <select class="form-control2">
                                                 <option selected>Choose</option>
                                                 <option >ปริญญาตรี</option>
                                                 <option >ปริญญาโท</option>
                                                 <option >ปริญญาเอก</option>
-                                              </select>
-
-                                        <label for="">คณะที่สนใจศึกษาต่อ</label>
-                                        <select class="form-control2">
+                                            </select>
+                                            <label for="">คณะที่สนใจศึกษาต่อ</label>
+                                            <select class="form-control2">
                                                 <option selected>Choose</option>
                                                 <option >...</option>
                                                 <option >...</option>
-                                              </select>
+                                            </select>
+                                            <label class="custom-control2 custom-checkbox mb-2 mr-sm-2 mb-sm-0">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <span class="custom-control-indicator-2"></span>
+                                                <span class="custom-control-description">สนใจรับจดหมายข่าว</span>
+                                            </label>
+                                            <label for="" class="col-form-label">E-mail</label>
+                                            <input type="" style="padding:.5rem;" class="form-control2" placeholder="E-mail" />
+
+                                            <label for="" class="col-form-label">เบอร์โทรศัพท์</label>
+                                            <input type="" style="padding:.5rem;" class="form-control2" placeholder="Phone" />
+
+                                            <div class="" style="position: absolute; bottom: 0px; right: 0px; text-align: right; padding-top:20px">
+                                                <a class="skip" href="#">ข้ามขั้นตอนนี้ไป</a>
+                                                <button class="btn btn-outline-success2 my-2 my-sm-0" type="submit">ต่อไป </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="parent" style="position: relative; min-height: 521px;">
+                                <div class="d-flex flex-column flex-lg-row">
+                                    <div>
+                                        <label for="">สนใจเข้าศึกษาในระดับ</label>
+                                        <select class="form-control2">
+                                            <option selected>Choose</option>
+                                            <option >ปริญญาตรี</option>
+                                            <option >ปริญญาโท</option>
+                                            <option >ปริญญาเอก</option>
+                                        </select>
+
+                                        <label for="">คณะที่สนใจศึกษาต่อ</label>
+                                        <select class="form-control2">
+                                            <option selected>Choose</option>
+                                            <option >...</option>
+                                            <option >...</option>
+                                        </select>
 
                                         <label class="custom-control2 custom-checkbox mb-2 mr-sm-2 mb-sm-0">
-                                              <input type="checkbox" class="custom-control-input">
-                                              <span class="custom-control-indicator-2"></span>
-                                              <span class="custom-control-description">สนใจรับจดหมายข่าว</span>
-                                            </label>
+                                            <input type="checkbox" class="custom-control-input">
+                                            <span class="custom-control-indicator-2"></span>
+                                            <span class="custom-control-description">สนใจรับจดหมายข่าว</span>
+                                        </label>
 
                                         <label for="" class="col-form-label">E-mail</label>
                                         <input type="" style="padding:.5rem;" class="form-control2" placeholder="E-mail" />
 
                                         <label for="" class="col-form-label">เบอร์โทรศัพท์</label>
                                         <input type="" style="padding:.5rem;" class="form-control2" placeholder="Phone" />
-
-                                        <div class="" style="text-align: right; padding-top:20px">
+                                        <div class="" style="position: absolute; bottom: 0px; right: 0px; text-align: right; padding-top:20px">
                                             <a class="skip" href="#">ข้ามขั้นตอนนี้ไป</a>
                                             <button class="btn btn-outline-success2 my-2 my-sm-0" type="submit">ต่อไป </button>
                                         </div>
-
                                     </div>
-
-                                </form>
-
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="parent">
-                            <div class="d-flex flex-column flex-lg-row">
-                                <div>
-                                    <label for="">สนใจเข้าศึกษาในระดับ</label>
-                                    <select class="form-control2">
-                                                <option selected>Choose</option>
-                                                <option >ปริญญาตรี</option>
-                                                <option >ปริญญาโท</option>
-                                                <option >ปริญญาเอก</option>
-                                              </select>
-
-                                    <label for="">คณะที่สนใจศึกษาต่อ</label>
-                                    <select class="form-control2">
-                                                <option selected>Choose</option>
-                                                <option >...</option>
-                                                <option >...</option>
-                                              </select>
-
-                                    <label class="custom-control2 custom-checkbox mb-2 mr-sm-2 mb-sm-0">
-                                              <input type="checkbox" class="custom-control-input">
-                                              <span class="custom-control-indicator-2"></span>
-                                              <span class="custom-control-description">สนใจรับจดหมายข่าว</span>
-                                            </label>
-
-                                    <label for="" class="col-form-label">E-mail</label>
-                                    <input type="" style="padding:.5rem;" class="form-control2" placeholder="E-mail" />
-
-                                    <label for="" class="col-form-label">เบอร์โทรศัพท์</label>
-                                    <input type="" style="padding:.5rem;" class="form-control2" placeholder="Phone" />
                                 </div>
+
                             </div>
                         </div>
                     </div>
+                    <div id="secound-step">
+
+                    </div>
                 </div>
-
             </div>
-
-
-
         </div>
     </div>
     <!-- // end .section -->
@@ -390,12 +389,13 @@
                     <ul class="list-inline">
                         <li class="list-inline-item">
                             <a href="#" class="fa fa-facebook icons"></a>
-                            <li class="list-inline-item">
-                                <a href="#" class="fa fa-twitter icons"></a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#" class="fa fa-google icons"></a>
-                            </li>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="fa fa-twitter icons"></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="fa fa-google icons"></a>
+                        </li>
                     </ul>
                 </div>
             </div>
