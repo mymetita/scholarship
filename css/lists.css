@@ -2,7 +2,7 @@
 [ Table ]*/
 .container-table100 {
   width: 100%;
-  min-height: 100vh;
+  height: 100%;
   background: #fff;
 
   display: -webkit-box;
@@ -82,7 +82,7 @@ th, td {
 }
 
 .table100-body {
-  max-height: 585px;
+  height: 100%;
 }
 
 /*==================================================================
@@ -108,6 +108,7 @@ th, td {
   font-size: 1rem;
   line-height: 1.5;
   background-color: #fff;
+  height: 75px;
 }
 
 .table100.ver5 .table100-body tr {

@@ -3585,11 +3585,12 @@ tbody.collapse.show {
 
 .tab-content > .tab-pane {
   display: none;
+  height: 100%;
 }
 
 .tab-content > .active {
   display: block;
-}
+  height: 100%;
 
 .navbar {
   position: relative;
