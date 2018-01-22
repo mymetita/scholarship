@@ -112,6 +112,36 @@
             <p>ทุนที่ลักษณะคล้ายกัน</p>
             <button class="buttonLists"><span>ทุนการศึกษาเอสโซ่ </span><p class="caption">สมโภชกรุงรัตนโกสินทร์ 200 ปี</p></button>
             <button class="buttonLists"><span>ทุนบุณรอด </span></button>
+
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+        <div class="embed-responsive embed-responsive-16by9">
+<!--   <iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=JGwWNGJdvx8" allowfullscreen></iframe> -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/HPYy3-igO_o" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+</div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
             <div class="boxs">
               <iframe src="https://www.youtube.com/embed/XGSy3_Czz8k"></iframe>
               <div class="boxscontainer">
@@ -136,6 +166,7 @@
           <p style="margin: 1rem;">คุณศุริษา แสงอรุณ (พี่เมี้ยว)<br>ติดต่อ 02 4708107</p>
         </div><!--/span-->
       </div><!--/row-->
+
       <!-- End Right part -->
       <hr>
       <!-- Bottom Part -->
@@ -188,7 +219,7 @@
 
         </div><!--/row-->
       </div>
-
+    </div>
 
     </main><!--/.container-->
 
@@ -229,5 +260,14 @@
     <script src="js/gototop.js"></script>
     <!-- Custom JS -->
     <script src="js/script.js"></script>
+
+    <script type="text/javascript">
+      $('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').focus()
+})
+    </script>
+    <script type="text/javascript">
+      
+    </script>
   </body>
 </html>

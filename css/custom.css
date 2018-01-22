@@ -1474,3 +1474,71 @@ select{
 input{
     color: #4F4F4F;
 }
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 70%;
+    margin: 30px auto;
+  }
+  .modal-sm {
+    max-width: 60%;
+  }
+}
+.modal-content {
+    background-color: transparent;
+    border:none;
+    }
+.modal-header{
+   border-bottom: none;
+   padding: 0px; 
+}
+
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+@media screen and (max-width: 767px) {
+  .row-offcanvas {
+    position: relative;
+    transition: all .25s ease-out;
+  }
+
+  .row-offcanvas-right {
+    right: 0;
+  }
+
+  .row-offcanvas-left {
+    left: 0;
+  }
+
+  .row-offcanvas-right .sidebar-offcanvas {
+    right: -100%; /* 12 columns */
+  }
+
+  .row-offcanvas-right.active .sidebar-offcanvas {
+    right: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left .sidebar-offcanvas {
+    left: -100%; /* 12 columns */
+  }
+
+  .row-offcanvas-left.active .sidebar-offcanvas {
+    left: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-right.active {
+    right: 50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left.active {
+    left: 50%; /* 6 columns */
+  }
+
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    width: 95%; /* 6 columns */
+    padding-right: 15%;
+  }
+}
