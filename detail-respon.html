@@ -54,6 +54,8 @@
             <!-- Toggle when small screen size -->
             <button type="button" class="btn btn-primary btn-sm" data-toggle="offcanvas">Playlists</button>
           </p>
+        </div>
+        <div class="col-12 col-md-9">
           <h3>ทุนเพชรพระจอมเกล้าปริญญาตรี</h3>
           <p><strong>Sponsor</strong> : มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี</p>
           <div class="row">
@@ -114,8 +116,16 @@
 
 
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-  Launch demo modal
+<button type="button" data-toggle="modal" data-target="#myModal" style="background-color: transparent; border: none;">
+<div class="boxs">
+  <div data-video-url="https://www.youtube.com/embed/XGSy3_Czz8k">
+<img src="" style="width: 50%; height: auto;">
+  </div>
+              <div class="boxscontainer">
+                <p>ภาพความทรงจำที่น่าประทับใจของ
+นักศึกษาทุนเพชรพระจอมเกล้า</p> 
+              </div>
+            </div>
 </button>
 
 <!-- Modal -->
@@ -130,11 +140,13 @@
       <div class="modal-body">
 
         <div class="embed-responsive embed-responsive-16by9">
-<!--   <iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=JGwWNGJdvx8" allowfullscreen></iframe> -->
-<iframe width="560" height="315" src="https://www.youtube.com/embed/HPYy3-igO_o" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
+<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/HPYy3-igO_o" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+<video width="320" height="240" controls>
+  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
 </div>
-
 
       </div>
     </div>
@@ -148,6 +160,7 @@
 นักศึกษาทุนเพชรพระจอมเกล้า</p> 
               </div>
             </div>
+
             <div class="boxs">
               <iframe src="https://www.youtube.com/embed/XGSy3_Czz8k"></iframe>
               <div class="boxscontainer">
@@ -163,6 +176,12 @@
               </div>
           </div>
           <p style="margin: 1rem;">คุณศุริษา แสงอรุณ (พี่เมี้ยว)<br>ติดต่อ 02 4708107</p>
+          <div class="row">
+          <a href="#" class="fa fa-facebook icons-2"></a>
+          <a href="#" class="fa fa-twitter icons-2"></a>
+          <a href="#" class="fa fa-google icons-2"></a>
+          <a href="#" class="fa fa-linkedin icons-2"></a>
+          </div>
         </div><!--/span-->
       </div><!--/row-->
 
@@ -216,7 +235,7 @@
               <div id="lines3"></div>
               <div id="lines4"></div>
             </div>
-            
+
           </div><!--/span-->
 
         </div><!--/row-->
@@ -264,12 +283,9 @@
     <script src="js/script.js"></script>
 
     <script type="text/javascript">
-      $('#myModal').on('shown.bs.modal', function () {
-  $('#myInput').focus()
-})
-    </script>
-    <script type="text/javascript">
-      
+      $("#myModal").on('hidden.bs.modal', function (e) {
+    $("#myModal iframe").attr("src", $("#myModal iframe").attr("src"));
+});
     </script>
   </body>
 </html>
