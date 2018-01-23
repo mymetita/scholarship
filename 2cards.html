@@ -46,7 +46,7 @@
         </div>
       </nav>
     </header> <!-- #header end -->
-
+<main role="main">
     <div class="container-fluid">
       <div class="row row-offcanvas row-offcanvas-left">
         <p class="float-left d-md-none">
@@ -54,7 +54,7 @@
             <button type="button" class="btn btn-primary btn-sm" data-toggle="offcanvas">Playlists</button>
           </p>
         
-        <div class="col-sm-3 col-md-2 sidebar-offcanvas" id="sidebar" style="padding-left: 3%; padding-right: 0;">
+        <div class="col-sm-3 col-md-2 sidebar-offcanvas-left" id="sidebar" style="padding-left: 3%; padding-right: 0;">
           <h5>ระดับการศึกษา</h5>
             <label class="custom-control2 custom-checkbox mb-2 mr-sm-2 mb-sm-0">
               <input type="checkbox" class="custom-control-input">
@@ -143,10 +143,11 @@
               <span class="custom-control-description">ทุนให้เปล่า</span>
             </label>
         </div>
-        <main role="main" class="col-sm-9 ml-sm-auto col-md-10"> 
+
+        <div class="col-sm-9 ml-sm-auto col-md-10"> 
           <section class="row text-center" style="padding: 0;">
             <div class="col-md-8 col-sm-12 placeholder"></div>
-            <div class="col-md-4 col-sm-3 placeholder">
+            <div class="col-md-4 col-sm-3 placeholder d-none d-sm-block">
               <a class="back-detail" style="float: left;" href="file:///C:/xampp/htdocs/sharescholarship/home-2.html">&lt; กลับสู่หน้าค้นหา</a>
               <ul class="nav nav-tabs" role="tablist" style="padding-left: 5%; margin-bottom: 1rem;">
                 <li class="nav-item">
@@ -436,6 +437,7 @@
     <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap/bootstrap.min.js"></script>
+    <script src="js/offcanvas.js"></script>
     <!-- Go to top -->
     <script src="js/gototop.js"></script>
     <!-- Custom JS -->
