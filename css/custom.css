@@ -1375,14 +1375,24 @@
         .boxs:hover {
             box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
         }
-        .boxs iframe {
+ 
+        .lightbox{
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+        }
+        .lightbox img{
             border-radius: 12px;
             border-color: transparent;
             width: 100%;
+            margin-bottom: 1rem;
         }
-        .boxs iframe {
-            border-radius: 12px;
+        .play-icon{
+            z-index: 1;
             width: 100%;
+            height: auto;
+            color: #fff;
+        
         }
         .boxscontainer {
             padding: 2px 16px;
@@ -1581,4 +1591,8 @@ input{
 }
 .list-group{
     margin-top: 3%;
+}
+
+.close{
+    text-shadow: none;
 }
