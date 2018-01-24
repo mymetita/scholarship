@@ -1189,7 +1189,7 @@
     }
     
     .more-detail{
-        position: relative; bottom: 0px;
+        position: absolute; bottom: -10px;right: 0px;
         display: fixed;
         color: #4F4F4F;
         padding-right: .5rem;
@@ -1491,19 +1491,12 @@
             margin: auto 0;
             width: 100%;
         }
-option{
-    font-weight: normal;
-    display: block;
-    white-space: pre;
-    min-height: 1.2em;
-    padding: 0px 2px 1px;
-    background: #f5d760aa;
-}
-option:hover{
-    background: #fff;
-}
+
 select{
     color: #4F4F4F;
+}
+option:focus{
+    background-color: #000;
 }
 input{
     color: #4F4F4F;
