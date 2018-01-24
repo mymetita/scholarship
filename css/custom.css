@@ -4,7 +4,6 @@
     
     body {
         font-family: 'Prompt', sans-serif;
-        /*position: relative;*/
         color: #4F4F4F;
     }
     
@@ -72,6 +71,9 @@
     p.lead {
         color: #e38cb7;
         margin-bottom: 2rem;
+    }
+    i{
+        font-family: 'Prompt', sans-serif;
     }
     
     .text-primary {
@@ -977,19 +979,7 @@
         font-size: .8rem;
         text-decoration: none;
     }
-    #home-back {
-        color: #ffffff;
-        text-decoration: none;
-        background-color: transparent;
-        -webkit-text-decoration-skip: objects;
-        font-size: .8rem;
-    }
-    
-    #home-back:hover {
-        color: #524B52;
-        font-size: .8rem;
-        text-decoration: none;
-    }
+
     .back-detail {
         color: #524B52;
         text-decoration: none;
@@ -1571,6 +1561,9 @@ input{
     top: 1%;
     width: 80%; /* 6 columns */
     padding-top: 2%;
+    background-color: #F5F5F5;
+    margin-top: 3%;
+    height: 100%;
   }
 
   .sidebar-offcanvas-left {
