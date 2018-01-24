@@ -998,6 +998,7 @@
         background-color: transparent;
         background-image: none;
         border-color: #FFF;
+        cursor: pointer;
     }
     
     .btn-outline-success2:hover {
@@ -1495,9 +1496,6 @@
 select{
     color: #4F4F4F;
 }
-option:focus{
-    background-color: #000;
-}
 input{
     color: #4F4F4F;
 }
@@ -1592,3 +1590,19 @@ input{
 .close{
     text-shadow: none;
 }
+/* ===== Select Box ===== */
+select {
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+select option {
+    cursor: pointer;
+    background-color: #F5F5F5;
+}
+
+/*select option:hover {
+    color: #EC6F66;
+    background-color: #FF8C3F;
+}*/
+/*==============================*/
