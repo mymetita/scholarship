@@ -1386,14 +1386,17 @@
             border-color: transparent;
             width: 100%;
             margin-bottom: 1rem;
+            opacity: .7;
         }
-        .play-icon{
-            z-index: 1;
-            width: 100%;
-            height: auto;
-            color: #fff;
+        .lightbox:hover img{
+            opacity: 1;
+        }
         
+        .modal-body iframe{
+            width: 560;
+            height: 315;
         }
+
         .boxscontainer {
             padding: 2px 16px;
         }

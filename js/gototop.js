@@ -23,4 +23,16 @@ function toggleAndChangeText() {
      }
 }
 
-//For youtub
+//Lightbox
+//Play list 1
+      $("#myModal").on('hidden.bs.modal', function (e) {
+      $("#myModal iframe").attr("src", $("#myModal iframe").attr("src"));
+      });
+//Play list 2
+      $("#myModal2").on('hidden.bs.modal', function (e) {
+      $("#myModal2 iframe").attr("src", $("#myModal2 iframe").attr("src"));
+      });
+//Play list 3
+      $("#myModal3").on('hidden.bs.modal', function (e) {
+      $("#myModal3 iframe").attr("src", $("#myModal3 iframe").attr("src"));
+      });
