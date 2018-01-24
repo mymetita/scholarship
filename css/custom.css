@@ -1601,8 +1601,17 @@ select option {
     background-color: #F5F5F5;
 }
 
-/*select option:hover {
-    color: #EC6F66;
-    background-color: #FF8C3F;
+/*@media (max-width:1000px){
+.navbar-toggler {
+  padding: 0.25rem 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+    }
+    .navbar-toggler:focus, .navbar-toggler:hover {
+  text-decoration: none;
+  display: fixed;
+}
 }*/
-/*==============================*/
