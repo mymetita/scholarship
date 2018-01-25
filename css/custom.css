@@ -1223,8 +1223,8 @@
     
     .bg-logo img {
         position: relative;
-        ;
         display: inline-block;
+        border-radius: 3px;
     }
     
     .details-header {
