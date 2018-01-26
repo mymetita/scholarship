@@ -297,7 +297,6 @@
     }
     
     .nav-menu {
-        /*padding: 1rem 0;*/
         transition: all 0.3s ease;
     }
     
@@ -507,13 +506,13 @@
     @media (min-width: 300px) {
         .body-cards {
         background-color: #F5F5F5;
-        padding-top: 35%;
+        padding-top: 30%;
         }
     }
     @media (min-width: 300px) {
         .body-details {
         background-color: #F5F5F5;
-        padding-top: 35%;
+        padding-top: 20%;
         }
     }
     @media (min-width: 576px) {
@@ -525,7 +524,7 @@
     @media (min-width: 400px) {
         .body-details {
         background-color: #F5F5F5;
-        padding-top: 30%;
+        padding-top: 20%;
         }
     }
     @media (min-width: 768px) {
@@ -644,13 +643,13 @@
         color: #4F4F4F;
         font-size: 0.9rem;
     }
+
     /* Drop down*/
     
     .drop-selector {
         color: #524B52;
         text-decoration: none;
         background-color: transparent;
-        padding: 0% 30% 0% 30%;
     }
     
     a:hover {
@@ -1600,18 +1599,21 @@ select option {
     cursor: pointer;
     background-color: #F5F5F5;
 }
-
-/*@media (max-width:1000px){
-.navbar-toggler {
-  padding: 0.25rem 0.75rem;
-  font-size: 1.25rem;
-  line-height: 1;
-  background: transparent;
-  border: 1px solid transparent;
-  border-radius: 0.25rem;
-    }
-    .navbar-toggler:focus, .navbar-toggler:hover {
-  text-decoration: none;
-  display: fixed;
+.text-animation {
+    text-align:left;
+    color:#fff;
+    position: relative;
+    -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+    animation: mymove 5s infinite;
 }
-}*/
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+    from {left: -50px;}
+    to {left: 30px;}
+}
+
+@keyframes mymove {
+    from {left: -50px;}
+    to {left: 30px;}
+}
